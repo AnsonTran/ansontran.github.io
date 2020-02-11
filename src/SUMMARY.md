@@ -24,3 +24,7 @@
     - [Therapies (Part 3)](./psya02/22-lecture.md)
 - [CSCC69 Operating Systems](./cscc69/README.md)
     - [Introduction to Operating Systems](./cscc69/01-lecture.md)
+- [CSCC63 Computability and Complexity](./cscc63/README.md)
+    - [Introductions and Definitions](./cscc63/01-lecture.md)
+		- [Even Ones TM](./cscc63/examples/even-ones-tm.md)
+    - [Turing Machines](./cscc63/02-lecture.md)

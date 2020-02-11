@@ -4,9 +4,9 @@ University of Toronto Scarborough
 Operating Systems  
 Winter 2020
 
-Instructor: Sina Meraji  
-Email: sina.mrj@gmail.com  
-Office hours: Thursday 4-5pm (by appointment)
+**Instructor**: Sina Meraji  
+**Email**: sina.mrj@gmail.com  
+**Office hours**: Thursday 4-5pm (by appointment)
 
 ## Course Description
 CSCC69H covers the main topics of operating systems with a focus on system programming in C. The course is
