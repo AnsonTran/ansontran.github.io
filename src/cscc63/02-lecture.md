@@ -83,3 +83,23 @@ So, we can simulate a NDTM with a TM. Similarly, there is a time cost. The
 size of the tree can be exponentially large in height, so doing a BFS on a
 configuration tree of an NTM can take exponentially longer than the running
 time of the NTM.
+
+## RAM model
+In the RAM model, each tape cell has an address, we can jump to any address
+during computation, and can read memory addresses from the tape to figure out
+where to jump. Gives us a regular computer's architecture!
+
+There is a \\(n^6\\) slowdown however, where n is the length of the string
+
+## Church-Turing Thesis
+As we can see, each of the modified turing machines can be simulated with a
+single tape TM. So, they all have the same expressive power.
+
+Anything that we can reasonably expect to do with an algorithm can also be
+decided using a TM:
+
+**Problems that can be solved using algorithms
+\\(\leftrightarrow\\)
+Problems that can be solved using TMs**
+
+

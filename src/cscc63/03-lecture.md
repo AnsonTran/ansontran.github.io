@@ -1,3 +1,5 @@
+# Recognizability and Co-recognizability
+
 A language L is recognizable iff:
 * For all \\(x \in L \\), there is some checking proof c that x is in L
 * For all \\(x \not\in L \\), there is no proof such that \\(x \not \in L\\), though
