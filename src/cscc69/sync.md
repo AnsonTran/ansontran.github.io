@@ -1,6 +1,8 @@
 # Synchronization
 Processes might want to communite with each other to do certain tasks. A
-process is: * **independent** if it cannot affect/be affected by other processes executing in the system. No data sharing * **cooperating** if not independent. Needs data sharing
+process is:
+* **independent** if it cannot affect/be affected by other processes executing in the system. No data sharing
+* **cooperating** if not independent. Needs data sharing
 
 Cooperating processes can exchange information using either
 * Shared memory (e.g. fork())
