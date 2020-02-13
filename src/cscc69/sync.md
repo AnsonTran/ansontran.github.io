@@ -1,13 +1,17 @@
-# Synchronization (No hardware)
+# Synchronization
 Processes might want to communite with each other to do certain tasks. A
-process is:
-* **independent** if it cannot affect/be affected by other processes executing
-  in the system. No data sharing
-* **cooperating** if not independent. Needs data sharing
+process is: * **independent** if it cannot affect/be affected by other processes executing in the system. No data sharing * **cooperating** if not independent. Needs data sharing
 
 Cooperating processes can exchange information using either
 * Shared memory (e.g. fork())
 * Message passing - Send(P,msg) and Receive(Q,msg)
+
+High-level Abstractions of the critical section:
+* **Locks** - Very primitive, minimal semantics
+* **Semaphores** - Basic, easy to understand, hard to program with
+* **Monitors** - High-level, ideally language support (Java)
+* **Messages** - Model for communication and sync. Direct application to
+  distributed systems.
 
 ## Banking Example
 Suppose we write a function to handle withdrawals and deposits to a bank account.
@@ -77,8 +81,8 @@ int deposit(acct, amt) {
 	return balance;
 }
 ```
-This piece of code needs to be synchronized so that only one thread can enter its
-critical section at a time. Other processes running concurrently must wait.
+This piece of code needs to be synchronized so that only one thread can enter
+its critical section at a time. Other processes running concurrently must wait.
 
 For program data:
 * Local variables are not shared - *private*
@@ -91,74 +95,63 @@ For program data:
 
 We want to design a protocol that satisfies the following properties:
 1. **Mutual Exclusion** - If a thread is in CS, no other thread is
-2. **Progress** - If no thread in CS and a thread wants to enter CS, it should be
-   able to enter in definite time.
+2. **Progress** - If no thread in CS and a thread wants to enter CS, it should
+   be able to enter in definite time.
 3. **Bounded waiting** - If some thread wait on CS, there should be a limit on
    the number of times other threads can enter CS before this thread is granted
    access. (no starvation)
 4. **Performance** - Overhead of enter/exit is small with respect to work being
    done within it
 
-Assumptions:
-* No special hardware instructions, no restriction on # of processors
-* Basic machine language instructions (LOAD STORE, etc.) are atomic
+## Producer and Consumer Problem
+Processes share a bounded buffer. The producer puts info into the buffer, and
+consumers take info out.
 
-## First Attempt
-Share an int variable *turn*(0 or 1). If turn=i, thread i is allowed into its CS
+Producer sleeps when buffer is full, and wakes up consumer when producing an item
+
+Consumer sleeps when buffer is empty, and wakes up producer when consuming an
+item
+
 ```c
-stuff(id_t id) {
-	...
-	while (turn != id); /* entry section */
-	/* critical section, access protected resource */
-	turn = 1-id; /* exit section */
-	...
-}
-```
-This achieves mutual exclusion, but not progress.
-1. thread 1 enters, sets turn to 0
-2. thread 1 wants to enter again, but thread 0 doesnt
-3. thread 1 cannot enter
+#define N 100
+int count = 0;
 
-## Second Attempt
-Have a shared flag for each thread
-```c
-boolean flag[2] = {false, false}
-```
-Each thread updates its own flag, and reads other thread's flag. If flag[i] is
-true, thread i is ready to enter its CS.
-```c
-stuff(id_t id) {
-	...
-	while (flag[1-id]); /* entry section */
-	flag[id] = true; /* indicate entering CS */
-	/* critical section, access protected resource */
-	flag[id] = false; /* exit section */
-	...
-}
-```
-However, if both flags reach the while loop at the same time (context switch),
-they both set flag to true and enter critical section.
-
-## Third Attempt (Peterson's Solution)
-Peterson's solution combines both the first and second attempts.
-```c
-#define FALSE 0
-#define TRUE 1
-#define N 2 // number of processes
-
-int turn; // whose turn is it
-int interested[N]; // all values initially 0
-
-void enter_region(int process) {
-	int other; // number of other process
-
-	other = 1-process; // the opposite of process
-	interested[process] = TRUE; // show that you're interested
-	turn=process; // set flag
-	while (turn == process && interested[other] == TRUE); // null statement
+void producer(void) {
+	int item;
+	while (TRUE) {
+		item = produce_item();
+		if (count == N) sleep();
+		insert_item(item);
+		count += 1;
+		if (count == 1) wakeup(consumer);
+	}
 }
 
-void leave_region(int process) {
-	interested[process] = FALSE; // indicate exit CS
-} 
+void consumer(void) { 
+	int item; 
+	while (TRUE) {
+		if (count == 0) sleep();
+		item = remove_item();
+		count -= 1;
+		if (count == N-1) wakeup(producer);
+		consume_item(item);
+	}
+}
 ```
+
+## Readers/Writers Problem
+An object is shared among several threads. Some threads only read the object,
+while other threads only write to it.
+
+We want to allow multiple concurrent **readers**, but only one **writer**
+
+![readers-writer](./pictures/readers-writer.png)
+
+## Dining Philosophers
+In this problem, there are N philosophers sitting around a table. There is N
+bowls of spaghetti and N forks. However, each philosopher needs two forks to eat.
+Philosophers can indicate to others that they want to eat by entering the HUNGRY
+state. When they are eating, they are in the EATING state. When not eating and
+not hungry, the philosopher is THINKING.
+
+![dining-philosophers](./pictures/dining-philosophers.png)
