@@ -1,5 +1,4 @@
 # Intelligence (Part 2)
-
 Samantha is a 17-year-old girl with lower-than-average self esteem. If she is
 like most people, when she is 65, what would you expect her self-esteem level
 to be?
@@ -112,6 +111,7 @@ Modern IQ tests test performance on areas from the bottom tier of Caroll's TTM
 * Stanford-Binet IQ test
 * Wechsler Intelligence Scale for Children (WISC)
 * Wechsler Adult Intelligence Scale (WAIS)
+* Raven Progresive Matrices (non-verbal)
 
 Different IQ tests for different ages
 * **Ideational fluency** for 7-year-olds:

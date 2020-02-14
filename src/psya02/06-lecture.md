@@ -1,5 +1,4 @@
 # Developmental Psychology (Part 3)
-
 Trisha is pregnant with her second baby. At 4 weeks gestational age, Trisha ingests a teratogenic substance.
 From this list, what is the fetal structure MOST likely to be adversely affected by this ingestion?
 1. Teeth

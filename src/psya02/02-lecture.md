@@ -1,5 +1,4 @@
 # Personality Psychology
-
 Martin takes the same personality quiz seven times. Each time, he gets a different result.
 What is a characteristic of this quiz?
 * High validity

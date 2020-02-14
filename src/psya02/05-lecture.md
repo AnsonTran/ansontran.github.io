@@ -1,5 +1,4 @@
 # Developmental Psychology (Part 2)
-
 After Ali's baby brother was born, she began to talk baby-talk and suck her thumb as she did when she
 was younger. What defence mechanism might she be displaying?
 1. Repression

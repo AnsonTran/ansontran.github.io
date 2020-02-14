@@ -1,5 +1,4 @@
 # Personality Psychology (Part 2)
-
 Which of the following does the MMPI NOT use to increase its validity?
 > Scalar questions
 

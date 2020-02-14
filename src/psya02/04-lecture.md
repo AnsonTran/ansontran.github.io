@@ -1,5 +1,4 @@
 # Developmental Psychology
-
 Match each Big Five personality dimension with the personality trait to which it is highly correlated
 1. Openness to new experience
 2. Conscientiousness
@@ -100,17 +99,19 @@ Lots of criticisms:
 * Are unfalsifiable, hard to argue results are right or wrong
 
 ## Humanistic-Existential Approach
-Argues humans seek out a realization of their inner potential (self-actualization)
+Argues humans seek out a realization of their inner potential
+(self-actualization)
 * pursuit of knowledge
 * expression of creativity
 * spiritual enlightenment
 * give back to society
 
-### Needs Hierarchy
-![needs-hierary](./pictures/needs-hierarchy.png)
+### Maslow's Needs Hierarchy
+People need to satisfy needs from the bottom of the pyramid before we can move
+up. Personality differences arise from environmental constraints against
+climbing our needs hierarchy
 
-* Need to satisfy needs from the bottom of the pyramid before we can move up
-* **Personality differences** arise from environmental constraints against climbing our needs hierarchy
+![needs-hierary](./pictures/needs-hierarchy.png)
 
 > Sarah is a highly creative person with a natural talent for story-telling. However, she lives in a war
 > torn developing nation, and is too busy making sure her family have enough to eat and are safe. She
