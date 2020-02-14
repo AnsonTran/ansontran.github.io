@@ -1,5 +1,4 @@
 # Emotion
-
 Which of the following is FALSE with respect to the normal distribution?
 1. The normal distribution is symmetrical (the same on both sides)
 2. The normal distribution is centered around the mean
