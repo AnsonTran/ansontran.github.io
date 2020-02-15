@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Emotion - Notes</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../psya02/index.html"><strong aria-hidden="true">1.</strong> PSYA02 Introduction to Psychological Science II</a></li><li><ol class="section"><li class="expanded "><a href="../psya02/01-lecture.html"><strong aria-hidden="true">1.1.</strong> Syllabus and Introduction to the Course</a></li><li class="expanded "><a href="../psya02/02-lecture.html"><strong aria-hidden="true">1.2.</strong> Personality Psychology</a></li><li class="expanded "><a href="../psya02/03-lecture.html"><strong aria-hidden="true">1.3.</strong> Personality Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/04-lecture.html"><strong aria-hidden="true">1.4.</strong> Developmental Psychology</a></li><li class="expanded "><a href="../psya02/05-lecture.html"><strong aria-hidden="true">1.5.</strong> Developmental Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/06-lecture.html"><strong aria-hidden="true">1.6.</strong> Developmental Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/07-lecture.html"><strong aria-hidden="true">1.7.</strong> Intelligence</a></li><li class="expanded "><a href="../psya02/08-lecture.html"><strong aria-hidden="true">1.8.</strong> Guest Lecture AA&amp;CC</a></li><li class="expanded "><a href="../psya02/09-lecture.html"><strong aria-hidden="true">1.9.</strong> Intelligence (Part 2)</a></li><li class="expanded "><a href="../psya02/10-lecture.html" class="active"><strong aria-hidden="true">1.10.</strong> Emotion</a></li><li class="expanded "><a href="../psya02/11-lecture.html"><strong aria-hidden="true">1.11.</strong> Emotion (Part 2)</a></li><li class="expanded "><a href="../psya02/12-lecture.html"><strong aria-hidden="true">1.12.</strong> Social Psychology</a></li><li class="expanded "><a href="../psya02/13-lecture.html"><strong aria-hidden="true">1.13.</strong> Social Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/14-lecture.html"><strong aria-hidden="true">1.14.</strong> Social Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/15-lecture.html"><strong aria-hidden="true">1.15.</strong> Health Psychology</a></li><li class="expanded "><a href="../psya02/16-lecture.html"><strong aria-hidden="true">1.16.</strong> Health Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/17-lecture.html"><strong aria-hidden="true">1.17.</strong> Clinical Psychology</a></li><li class="expanded "><a href="../psya02/18-lecture.html"><strong aria-hidden="true">1.18.</strong> Clinical Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/19-lecture.html"><strong aria-hidden="true">1.19.</strong> Clinical Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/20-lecture.html"><strong aria-hidden="true">1.20.</strong> Therapies</a></li><li class="expanded "><a href="../psya02/21-lecture.html"><strong aria-hidden="true">1.21.</strong> Therapies (Part 2)</a></li><li class="expanded "><a href="../psya02/22-lecture.html"><strong aria-hidden="true">1.22.</strong> Therapies (Part 3)</a></li></ol></li><li class="expanded "><a href="../cscc69/index.html"><strong aria-hidden="true">2.</strong> CSCC69 Operating Systems</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/intro.html"><strong aria-hidden="true">2.1.</strong> Introduction to Operating Systems</a></li><li class="expanded "><a href="../cscc69/bootstrap.html"><strong aria-hidden="true">2.2.</strong> Bootstrapping</a></li><li class="expanded "><a href="../cscc69/syscalls.html"><strong aria-hidden="true">2.3.</strong> System Calls</a></li><li class="expanded "><a href="../cscc69/sync.html"><strong aria-hidden="true">2.4.</strong> Synchronization</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/peterson.html"><strong aria-hidden="true">2.4.1.</strong> Peterson's Solution</a></li><li class="expanded "><a href="../cscc69/locks.html"><strong aria-hidden="true">2.4.2.</strong> Locks</a></li><li class="expanded "><a href="../cscc69/semaphores.html"><strong aria-hidden="true">2.4.3.</strong> Semaphores</a></li><li class="expanded "><a href="../cscc69/monitors.html"><strong aria-hidden="true">2.4.4.</strong> Monitors</a></li></ol></li><li class="expanded "><a href="../cscc69/sched.html"><strong aria-hidden="true">2.5.</strong> Scheduling</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/non-preemp.html"><strong aria-hidden="true">2.5.1.</strong> Non-preemptive</a></li><li class="expanded "><a href="../cscc69/preemp.html"><strong aria-hidden="true">2.5.2.</strong> Preemptive</a></li></ol></li></ol></li><li class="expanded "><a href="../cscc63/index.html"><strong aria-hidden="true">3.</strong> CSCC63 Computability and Complexity</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/intro.html"><strong aria-hidden="true">3.1.</strong> Introductions and Definitions</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/examples/even-ones-tm.html"><strong aria-hidden="true">3.1.1.</strong> Even Ones TM</a></li></ol></li><li class="expanded "><a href="../cscc63/proof-methods.html"><strong aria-hidden="true">3.2.</strong> Proof Methods</a></li><li class="expanded "><a href="../cscc63/turing-machines.html"><strong aria-hidden="true">3.3.</strong> Turing Machines</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/accept-tm.html"><strong aria-hidden="true">3.3.1.</strong> Accept TM</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Notes</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#emotion" id="emotion">Emotion</a></h1>
+<p>Which of the following is FALSE with respect to the normal distribution?</p>
+<ol>
+<li>The normal distribution is symmetrical (the same on both sides)</li>
+<li>The normal distribution is centered around the mean</li>
+<li>All naturally-occuring variables are normally distributed</li>
+<li>On a particular normally distributed variable, approximately 16% of
+individuals' scores fall above one standard deviation above the mean.</li>
+<li>On a particular normally distributed variable, approximately 2% of
+individuals' scores fall below two standard deviations below the mean.</li>
+</ol>
+<blockquote>
+<p>All naturally-occuring variables are normally distributed</p>
+</blockquote>
+<p>James scores 85 on an IQ test designed for his age and location. In what
+percentile does James' score fall?</p>
+<ol>
+<li>85th percentile</li>
+<li>16th percentile</li>
+<li>50th percentile</li>
+<li>25th percentile</li>
+<li>2nd percentile</li>
+</ol>
+<blockquote>
+<p>16th percentile</p>
+</blockquote>
+<p>Which of the following is NOT a part of Carroll's basic intelligence stratum
+(the second level)? THere is more than one right answer: select them all!</p>
+<ol>
+<li>g</li>
+<li>fluid intelligence</li>
+<li>crystallized intelligence</li>
+<li>printed language comprehension</li>
+<li>broad visual perception </li>
+</ol>
+<blockquote>
+<p>g<br />
+printed language comprehension</p>
+</blockquote>
+<h2><a class="header" href="#views-of-intelligence" id="views-of-intelligence">Views of Intelligence</a></h2>
+<p>Gardner's Theory of Multiple Intelligences</p>
+<ul>
+<li>People have at least 7 types of intelligence necessary for functioning and
+survival</li>
+<li>Not based on writte/verbal tests</li>
+<li>Based on self-reporting and behavioural observation</li>
+</ul>
+<p><img src="./pictures/gardner-view.png" alt="gardner-view" />
+<em>Nature intelligence is a new one that was added</em><br />
+<em>The three red ones correlate to ones from Caroll's model</em></p>
+<ul>
+<li>Damage to specific brain area may impact one type of intelligence, but not
+others</li>
+<li>Areas of intelligence develop at different rates</li>
+</ul>
+<p>Flynn Effect Slope:</p>
+<ul>
+<li>IQ scores consistently rising around the world</li>
+<li>Possible cuases are increased nutrition, health, better formal education,etc.</li>
+</ul>
+<h2><a class="header" href="#emotional-intelligence" id="emotional-intelligence">Emotional Intelligence</a></h2>
+<p>The ability to reason about emotions and to use emotions to enhance reasoning.
+Emotional intelligence is not tested by traditional IQ tests.</p>
+<p>Individuals with <strong>high</strong> emotional intelligence show less brain activation when
+solving emotional problems.</p>
+<p><strong>Emotion</strong>: <em>posiive</em> or <em>negative</em> response to stimulus(internal thought or
+external environmental events)</p>
+<ul>
+<li>
+<p>Physiological: racing heart, tense muscles</p>
+</li>
+<li>
+<p>Cognitive: subjective conscious experience</p>
+</li>
+<li>
+<p>Behavioural: characteristic overt expressions, facial expressions, posture</p>
+</li>
+<li>
+<p>Defined by valence(positive or negative) and psychological arousal (severity)</p>
+</li>
+</ul>
+<p><img src="./pictures/emotion-graph.png" alt="emotion-graph" /></p>
+<p>Emotions developed as a way for us to survive(happiness to increase social
+cohesion, fear to keep out of danger, anger to overcome obstacles, etc.)</p>
+<h2><a class="header" href="#theories-of-emotion" id="theories-of-emotion">Theories of Emotion</a></h2>
+<p>Theories of emotion disagree on what cause emotion</p>
+<ul>
+<li>Preception of stimulus</li>
+<li>Physiological state</li>
+<li>Cognitive interpretation of stimulus</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=kyxv0wZL29M
+" target="_blank"><img src="http://img.youtube.com/vi/kyxv0wZL29M/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
+<p><strong>Common Sense View</strong>
+stimulus &gt; emotion &gt; arousal<br />
+see a bear &gt; causes fear &gt; causes increased heartrate</p>
+<p><strong>James-Lange Theory</strong>
+stimulus &gt; arousal &gt; emotion<br />
+see a bear &gt; causes increases heartrate &gt; causes experience of fear</p>
+<p><strong>Cannon-Bard Theory</strong>
+stimulus &gt; emotion &amp; arousal<br />
+see a bear &gt; causes increased heartrate AND experience of fear separately</p>
+<p><strong>Schachter-Singer Two-Factory Theory</strong>
+stimulus &gt; arousal &gt; cognition &gt; emotion<br />
+stimulus causes physiological state, brain interprets that state emotionally,</p>
+<h2><a class="header" href="#neuroscience-view" id="neuroscience-view">Neuroscience View</a></h2>
+<p>Related neural structures to emotion:</p>
+<ul>
+<li>Amygdala - primitive, quickly processes biologically relevant information</li>
+<li>Prefrontal cortex - advanced, slowly processes information rationally</li>
+</ul>
+<p>Friend tries to scare you, thalamus processes the sound, movement, etc. and
+sends to the amygdala and prefrontal cortex</p>
+<p>Amygdala immediately triggers survival based fear response</p>
+<p>Prefrontal cortex makes you calm down, laugh.</p>
+<h2><a class="header" href="#emotional-regulation" id="emotional-regulation">Emotional Regulation</a></h2>
+<p>Emotional regulation is a somewhat learned strategy. Adults are good at
+regulating emotions, younger children are not. There are several factors:</p>
+<ul>
+<li>Internal feeling state (how we feel)</li>
+<li>Emotion-related cognitions</li>
+<li>Emotion-related physiological processes</li>
+<li>Emotion-related behaviour</li>
+</ul>
+<p>Much is related to <strong>temperament</strong></p>
+<ul>
+<li>Levels of emotionality(positive/negative)</li>
+<li>Ability to self-regulate emotion</li>
+<li>Predominantly biologically based</li>
+</ul>
+<p>Infant strategies (begins to appear after 6 months):</p>
+<ul>
+<li><strong>Gaze aversion</strong></li>
+<li><strong>Self-soothing</strong></li>
+</ul>
+<p>Strategies:</p>
+<ul>
+<li><strong>Distraction</strong> by thinking/doing something else from experiences (more often
+negative stimuli)</li>
+<li><strong>Suppression</strong> of negative thoughts</li>
+<li><strong>Affect Labelling</strong>, naming emotional experiences</li>
+<li><strong>Re-appraisal</strong>, think of emotion-inducing stimulus in a different way</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../psya02/09-lecture.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../psya02/11-lecture.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../psya02/09-lecture.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../psya02/11-lecture.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Synchronization - Notes</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../psya02/index.html"><strong aria-hidden="true">1.</strong> PSYA02 Introduction to Psychological Science II</a></li><li><ol class="section"><li class="expanded "><a href="../psya02/01-lecture.html"><strong aria-hidden="true">1.1.</strong> Syllabus and Introduction to the Course</a></li><li class="expanded "><a href="../psya02/02-lecture.html"><strong aria-hidden="true">1.2.</strong> Personality Psychology</a></li><li class="expanded "><a href="../psya02/03-lecture.html"><strong aria-hidden="true">1.3.</strong> Personality Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/04-lecture.html"><strong aria-hidden="true">1.4.</strong> Developmental Psychology</a></li><li class="expanded "><a href="../psya02/05-lecture.html"><strong aria-hidden="true">1.5.</strong> Developmental Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/06-lecture.html"><strong aria-hidden="true">1.6.</strong> Developmental Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/07-lecture.html"><strong aria-hidden="true">1.7.</strong> Intelligence</a></li><li class="expanded "><a href="../psya02/08-lecture.html"><strong aria-hidden="true">1.8.</strong> Guest Lecture AA&amp;CC</a></li><li class="expanded "><a href="../psya02/09-lecture.html"><strong aria-hidden="true">1.9.</strong> Intelligence (Part 2)</a></li><li class="expanded "><a href="../psya02/10-lecture.html"><strong aria-hidden="true">1.10.</strong> Emotion</a></li><li class="expanded "><a href="../psya02/11-lecture.html"><strong aria-hidden="true">1.11.</strong> Emotion (Part 2)</a></li><li class="expanded "><a href="../psya02/12-lecture.html"><strong aria-hidden="true">1.12.</strong> Social Psychology</a></li><li class="expanded "><a href="../psya02/13-lecture.html"><strong aria-hidden="true">1.13.</strong> Social Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/14-lecture.html"><strong aria-hidden="true">1.14.</strong> Social Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/15-lecture.html"><strong aria-hidden="true">1.15.</strong> Health Psychology</a></li><li class="expanded "><a href="../psya02/16-lecture.html"><strong aria-hidden="true">1.16.</strong> Health Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/17-lecture.html"><strong aria-hidden="true">1.17.</strong> Clinical Psychology</a></li><li class="expanded "><a href="../psya02/18-lecture.html"><strong aria-hidden="true">1.18.</strong> Clinical Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/19-lecture.html"><strong aria-hidden="true">1.19.</strong> Clinical Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/20-lecture.html"><strong aria-hidden="true">1.20.</strong> Therapies</a></li><li class="expanded "><a href="../psya02/21-lecture.html"><strong aria-hidden="true">1.21.</strong> Therapies (Part 2)</a></li><li class="expanded "><a href="../psya02/22-lecture.html"><strong aria-hidden="true">1.22.</strong> Therapies (Part 3)</a></li></ol></li><li class="expanded "><a href="../cscc69/index.html"><strong aria-hidden="true">2.</strong> CSCC69 Operating Systems</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/intro.html"><strong aria-hidden="true">2.1.</strong> Introduction to Operating Systems</a></li><li class="expanded "><a href="../cscc69/bootstrap.html"><strong aria-hidden="true">2.2.</strong> Bootstrapping</a></li><li class="expanded "><a href="../cscc69/syscalls.html"><strong aria-hidden="true">2.3.</strong> System Calls</a></li><li class="expanded "><a href="../cscc69/sync.html" class="active"><strong aria-hidden="true">2.4.</strong> Synchronization</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/peterson.html"><strong aria-hidden="true">2.4.1.</strong> Peterson's Solution</a></li><li class="expanded "><a href="../cscc69/locks.html"><strong aria-hidden="true">2.4.2.</strong> Locks</a></li><li class="expanded "><a href="../cscc69/semaphores.html"><strong aria-hidden="true">2.4.3.</strong> Semaphores</a></li><li class="expanded "><a href="../cscc69/monitors.html"><strong aria-hidden="true">2.4.4.</strong> Monitors</a></li></ol></li><li class="expanded "><a href="../cscc69/sched.html"><strong aria-hidden="true">2.5.</strong> Scheduling</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/non-preemp.html"><strong aria-hidden="true">2.5.1.</strong> Non-preemptive</a></li><li class="expanded "><a href="../cscc69/preemp.html"><strong aria-hidden="true">2.5.2.</strong> Preemptive</a></li></ol></li></ol></li><li class="expanded "><a href="../cscc63/index.html"><strong aria-hidden="true">3.</strong> CSCC63 Computability and Complexity</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/intro.html"><strong aria-hidden="true">3.1.</strong> Introductions and Definitions</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/examples/even-ones-tm.html"><strong aria-hidden="true">3.1.1.</strong> Even Ones TM</a></li></ol></li><li class="expanded "><a href="../cscc63/proof-methods.html"><strong aria-hidden="true">3.2.</strong> Proof Methods</a></li><li class="expanded "><a href="../cscc63/turing-machines.html"><strong aria-hidden="true">3.3.</strong> Turing Machines</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/accept-tm.html"><strong aria-hidden="true">3.3.1.</strong> Accept TM</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Notes</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#synchronization" id="synchronization">Synchronization</a></h1>
+<p>Processes might want to communite with each other to do certain tasks. A
+process is:</p>
+<ul>
+<li><strong>independent</strong> if it cannot affect/be affected by other processes executing in the system. No data sharing</li>
+<li><strong>cooperating</strong> if not independent. Needs data sharing</li>
+</ul>
+<p>Cooperating processes can exchange information using either</p>
+<ul>
+<li>Shared memory (e.g. fork())</li>
+<li>Message passing - Send(P,msg) and Receive(Q,msg)</li>
+</ul>
+<p>High-level Abstractions of the critical section:</p>
+<ul>
+<li><strong>Locks</strong> - Very primitive, minimal semantics</li>
+<li><strong>Semaphores</strong> - Basic, easy to understand, hard to program with</li>
+<li><strong>Monitors</strong> - High-level, ideally language support (Java)</li>
+<li><strong>Messages</strong> - Model for communication and sync. Direct application to
+distributed systems.</li>
+</ul>
+<h2><a class="header" href="#banking-example" id="banking-example">Banking Example</a></h2>
+<p>Suppose we write a function to handle withdrawals and deposits to a bank account.
+A bank's central server would create separate threads for each action.</p>
+<pre><code class="language-c">int balance = 1000;
+
+int withdraw(acct, amt) {
+	balance = get_balance(acct);
+	balance = balance - amt;
+	put_balance(acct, balance);
+	return balance;
+}
+
+int deposit(acct, amt) {
+	balance = get_balance(acct);
+	balance = balance + amt;
+	put_balance(acct, balance);
+	return balance;
+}
+</code></pre>
+<p>Suppose you withdraw $100 and S.O. deposits $100. What is the account balance?
+The problem is, processes can be interleaved, due to context switching.</p>
+<pre><code class="language-c">// Withdrawing code
+balance = get_balance(acct);
+balance = balance - amt;
+
+// Context switch, deposit code starts executing
+balance = get_balance(acct);
+balance = balance + amt;
+put_balance(acct, balance);
+
+// Withdrawing code continues
+put_balance(acct, balance);
+</code></pre>
+<p>The problem is that concurrent threads manipulated a shared resource without
+synchronization. This causes a <strong>race condition</strong>, where outcome depends on the
+order in which accesses take place.</p>
+<h2><a class="header" href="#critical-section" id="critical-section">Critical Section</a></h2>
+<p>We identify a section of the code where shared resources are accessed, called the
+<strong>critical section</strong>.</p>
+<pre><code class="language-c">int balance = 1000;
+
+int withdraw(acct, amt) {
+	// Enter critical section
+	balance = get_balance(acct);
+	balance = balance - amt;
+	put_balance(acct, balance);
+	// Exit critical section
+	return balance;
+}
+
+int deposit(acct, amt) {
+	// Enter critical section
+	balance = get_balance(acct);
+	balance = balance + amt;
+	put_balance(acct, balance);
+	// Exit critical section
+	return balance;
+}
+</code></pre>
+<p>This piece of code needs to be synchronized so that only one thread can enter
+its critical section at a time. Other processes running concurrently must wait.</p>
+<p>For program data:</p>
+<ul>
+<li>Local variables are not shared - <em>private</em>
+<ul>
+<li>Each thread has its own stack</li>
+<li>Local variables allocated on this private stack</li>
+</ul>
+</li>
+<li>Global variables and static objects - <em>shared</em>
+<ul>
+<li>Stored in static data segment, accessible by any thread</li>
+</ul>
+</li>
+<li>Dynamic objects and other heap objects - <em>shared</em>
+<ul>
+<li>Allocated from heap with malloc/free or new/delete</li>
+</ul>
+</li>
+</ul>
+<p>We want to design a protocol that satisfies the following properties:</p>
+<ol>
+<li><strong>Mutual Exclusion</strong> - If a thread is in CS, no other thread is</li>
+<li><strong>Progress</strong> - If no thread in CS and a thread wants to enter CS, it should
+be able to enter in definite time.</li>
+<li><strong>Bounded waiting</strong> - If some thread wait on CS, there should be a limit on
+the number of times other threads can enter CS before this thread is granted
+access. (no starvation)</li>
+<li><strong>Performance</strong> - Overhead of enter/exit is small with respect to work being
+done within it</li>
+</ol>
+<h2><a class="header" href="#producer-and-consumer-problem" id="producer-and-consumer-problem">Producer and Consumer Problem</a></h2>
+<p>Processes share a bounded buffer. The producer puts info into the buffer, and
+consumers take info out.</p>
+<p>Producer sleeps when buffer is full, and wakes up consumer when producing an item</p>
+<p>Consumer sleeps when buffer is empty, and wakes up producer when consuming an
+item</p>
+<pre><code class="language-c">#define N 100
+int count = 0;
+
+void producer(void) {
+	int item;
+	while (TRUE) {
+		item = produce_item();
+		if (count == N) sleep();
+		insert_item(item);
+		count += 1;
+		if (count == 1) wakeup(consumer);
+	}
+}
+
+void consumer(void) { 
+	int item; 
+	while (TRUE) {
+		if (count == 0) sleep();
+		item = remove_item();
+		count -= 1;
+		if (count == N-1) wakeup(producer);
+		consume_item(item);
+	}
+}
+</code></pre>
+<h2><a class="header" href="#readerswriters-problem" id="readerswriters-problem">Readers/Writers Problem</a></h2>
+<p>An object is shared among several threads. Some threads only read the object,
+while other threads only write to it.</p>
+<p>We want to allow multiple concurrent <strong>readers</strong>, but only one <strong>writer</strong></p>
+<p><img src="./pictures/readers-writer.png" alt="readers-writer" /></p>
+<h2><a class="header" href="#dining-philosophers" id="dining-philosophers">Dining Philosophers</a></h2>
+<p>In this problem, there are N philosophers sitting around a table. There is N
+bowls of spaghetti and N forks. However, each philosopher needs two forks to eat.
+Philosophers can indicate to others that they want to eat by entering the HUNGRY
+state. When they are eating, they are in the EATING state. When not eating and
+not hungry, the philosopher is THINKING.</p>
+<p><img src="./pictures/dining-philosophers.png" alt="dining-philosophers" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../cscc69/syscalls.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../cscc69/peterson.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../cscc69/syscalls.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../cscc69/peterson.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

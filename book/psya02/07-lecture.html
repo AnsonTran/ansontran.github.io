@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Intelligence - Notes</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="../psya02/index.html"><strong aria-hidden="true">1.</strong> PSYA02 Introduction to Psychological Science II</a></li><li><ol class="section"><li class="expanded "><a href="../psya02/01-lecture.html"><strong aria-hidden="true">1.1.</strong> Syllabus and Introduction to the Course</a></li><li class="expanded "><a href="../psya02/02-lecture.html"><strong aria-hidden="true">1.2.</strong> Personality Psychology</a></li><li class="expanded "><a href="../psya02/03-lecture.html"><strong aria-hidden="true">1.3.</strong> Personality Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/04-lecture.html"><strong aria-hidden="true">1.4.</strong> Developmental Psychology</a></li><li class="expanded "><a href="../psya02/05-lecture.html"><strong aria-hidden="true">1.5.</strong> Developmental Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/06-lecture.html"><strong aria-hidden="true">1.6.</strong> Developmental Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/07-lecture.html" class="active"><strong aria-hidden="true">1.7.</strong> Intelligence</a></li><li class="expanded "><a href="../psya02/08-lecture.html"><strong aria-hidden="true">1.8.</strong> Guest Lecture AA&amp;CC</a></li><li class="expanded "><a href="../psya02/09-lecture.html"><strong aria-hidden="true">1.9.</strong> Intelligence (Part 2)</a></li><li class="expanded "><a href="../psya02/10-lecture.html"><strong aria-hidden="true">1.10.</strong> Emotion</a></li><li class="expanded "><a href="../psya02/11-lecture.html"><strong aria-hidden="true">1.11.</strong> Emotion (Part 2)</a></li><li class="expanded "><a href="../psya02/12-lecture.html"><strong aria-hidden="true">1.12.</strong> Social Psychology</a></li><li class="expanded "><a href="../psya02/13-lecture.html"><strong aria-hidden="true">1.13.</strong> Social Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/14-lecture.html"><strong aria-hidden="true">1.14.</strong> Social Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/15-lecture.html"><strong aria-hidden="true">1.15.</strong> Health Psychology</a></li><li class="expanded "><a href="../psya02/16-lecture.html"><strong aria-hidden="true">1.16.</strong> Health Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/17-lecture.html"><strong aria-hidden="true">1.17.</strong> Clinical Psychology</a></li><li class="expanded "><a href="../psya02/18-lecture.html"><strong aria-hidden="true">1.18.</strong> Clinical Psychology (Part 2)</a></li><li class="expanded "><a href="../psya02/19-lecture.html"><strong aria-hidden="true">1.19.</strong> Clinical Psychology (Part 3)</a></li><li class="expanded "><a href="../psya02/20-lecture.html"><strong aria-hidden="true">1.20.</strong> Therapies</a></li><li class="expanded "><a href="../psya02/21-lecture.html"><strong aria-hidden="true">1.21.</strong> Therapies (Part 2)</a></li><li class="expanded "><a href="../psya02/22-lecture.html"><strong aria-hidden="true">1.22.</strong> Therapies (Part 3)</a></li></ol></li><li class="expanded "><a href="../cscc69/index.html"><strong aria-hidden="true">2.</strong> CSCC69 Operating Systems</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/intro.html"><strong aria-hidden="true">2.1.</strong> Introduction to Operating Systems</a></li><li class="expanded "><a href="../cscc69/bootstrap.html"><strong aria-hidden="true">2.2.</strong> Bootstrapping</a></li><li class="expanded "><a href="../cscc69/syscalls.html"><strong aria-hidden="true">2.3.</strong> System Calls</a></li><li class="expanded "><a href="../cscc69/sync.html"><strong aria-hidden="true">2.4.</strong> Synchronization</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/peterson.html"><strong aria-hidden="true">2.4.1.</strong> Peterson's Solution</a></li><li class="expanded "><a href="../cscc69/locks.html"><strong aria-hidden="true">2.4.2.</strong> Locks</a></li><li class="expanded "><a href="../cscc69/semaphores.html"><strong aria-hidden="true">2.4.3.</strong> Semaphores</a></li><li class="expanded "><a href="../cscc69/monitors.html"><strong aria-hidden="true">2.4.4.</strong> Monitors</a></li></ol></li><li class="expanded "><a href="../cscc69/sched.html"><strong aria-hidden="true">2.5.</strong> Scheduling</a></li><li><ol class="section"><li class="expanded "><a href="../cscc69/non-preemp.html"><strong aria-hidden="true">2.5.1.</strong> Non-preemptive</a></li><li class="expanded "><a href="../cscc69/preemp.html"><strong aria-hidden="true">2.5.2.</strong> Preemptive</a></li></ol></li></ol></li><li class="expanded "><a href="../cscc63/index.html"><strong aria-hidden="true">3.</strong> CSCC63 Computability and Complexity</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/intro.html"><strong aria-hidden="true">3.1.</strong> Introductions and Definitions</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/examples/even-ones-tm.html"><strong aria-hidden="true">3.1.1.</strong> Even Ones TM</a></li></ol></li><li class="expanded "><a href="../cscc63/proof-methods.html"><strong aria-hidden="true">3.2.</strong> Proof Methods</a></li><li class="expanded "><a href="../cscc63/turing-machines.html"><strong aria-hidden="true">3.3.</strong> Turing Machines</a></li><li><ol class="section"><li class="expanded "><a href="../cscc63/accept-tm.html"><strong aria-hidden="true">3.3.1.</strong> Accept TM</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Notes</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#intelligence" id="intelligence">Intelligence</a></h1>
+<p>10-month old Ian is participating in the Strange Situation paradigm. When his
+mother returns to the room for the reunion, Ian crawls to her, crying,
+and she picks him up. He reaches for her, but then pushes her away. This
+behaviour is a characteristic of what attachment style, according to Mary
+Ainsworth?</p>
+<ol>
+<li>Secure</li>
+<li>Insecure-ambivalent</li>
+<li>Insecure-avoidant</li>
+<li>Disorganized/disoriented</li>
+<li>Insecure-pushing</li>
+</ol>
+<blockquote>
+<p>Insecure-ambivalent</p>
+</blockquote>
+<p>Piaget argued that children develop cognitively by creating and modifying
+the schemas by which they understand the world. Which of the following
+terms describes the process by which a child encounters a new stimulus
+that they can incorporate into their existing schema?</p>
+<ol>
+<li>Equilibrium</li>
+<li>Accomodation</li>
+<li>Assimilation</li>
+<li>Theory of mind</li>
+<li>False belief</li>
+</ol>
+<blockquote>
+<p>Assimilation</p>
+</blockquote>
+<p>Marcel is a 4-year old boy. Which of the following terms is he most likely
+to use to describe himself?</p>
+<ol>
+<li>Shy</li>
+<li>Bright</li>
+<li>Strong</li>
+<li>Outgoing</li>
+<li>Generous</li>
+</ol>
+<blockquote>
+<p>Strong - Usually describe themselves physically and in positive terms</p>
+</blockquote>
+<h2><a class="header" href="#adolescence" id="adolescence">Adolescence</a></h2>
+<p>Period of development between childhood and adulthood, about age 12-25</p>
+<ul>
+<li>Begins at puberty (different based on age, gender, etc.)</li>
+<li>Ends at brain maturity - increase and refinement of connections in the
+prefrontal cortex
+Biological definition of adolescence is different from age 18, usually
+associated with right to vote, drive, drink, etc.</li>
+</ul>
+<p>Major psychological changes also occur affecting:</p>
+<ul>
+<li>Self-esteem</li>
+<li>Identity</li>
+<li>Sexuality</li>
+<li>Morality</li>
+</ul>
+<p><strong>Executive Behaviours</strong>: Prefrontal cortex is responsible for decision
+making, goal-driven behaviour, inhibition</p>
+<p><strong>Positivity bias(self-enhancement)</strong> -Kids often describe themselves positively</p>
+<ul>
+<li>4-year olds almost always over-enhance</li>
+<li>6-year olds do so at a lesser degree</li>
+<li>Less pronounced for peers than for self</li>
+</ul>
+<p><strong>Protective Optimism</strong>-Believe positive traits are unchangeable, and
+negative traits have the potential to change easily -
+<em>If they are nice, they will be nice forever</em></p>
+<p>Both bias and optimism decline quickly at school age, due to</p>
+<ul>
+<li>Evaluation compared to other kids their age (objective evaluation)</li>
+<li>Cognitive skills increase, as we learn more about how the world works</li>
+<li>Begin to view the world from not just their own perspectives, and learn
+that other people may not see them the way they see themselves</li>
+</ul>
+<p>Adolescents slowly gain self esteem through development, and adults slowly
+lose self esteem as they age. Highly correlated with medical decline.</p>
+<p>Relatively speaking, self-esteem is relatively consistent across the lifespan.</p>
+<ul>
+<li>Maintain rank-order stability</li>
+<li>Genetics plays a big factor, but not all</li>
+</ul>
+<h2><a class="header" href="#identity-formation" id="identity-formation">Identity Formation</a></h2>
+<p>Finding out what oneself is. How one defines oneself for the rest of one's life.</p>
+<p><strong>Erik Erikson</strong>: German-American developmental scientist, developed a theory
+of <em>conflicts</em> and <em>resolutions</em>.</p>
+<ul>
+<li>Believed that adolescents chief task was to figure out who they were</li>
+<li><em>Abstract thinking</em></li>
+<li><em>Self-socialization</em> - Choosing friends and social groups</li>
+<li><em>Personal fable</em> - &quot;No one can possibly understand me&quot;</li>
+</ul>
+<p>Challenges that the adolescent experiences:</p>
+<ul>
+<li>Identity confusion - Not knowing who they are</li>
+<li>Identity foreclosure - Choose an identity too early (picking careers)</li>
+<li>Negative identity - Opposition to others/social norms</li>
+</ul>
+<p>Adults experience widespread changes to their physiology for the remainder
+of their lives including</p>
+<ul>
+<li>Changes in sensory systems (vision, audition, etc.)</li>
+<li>Neuron (brain cell death)
+<ul>
+<li>Causes changes in memory storage and retrieval at different rates
+<ul>
+<li>Episodic memory - remember an event that happened in time</li>
+<li>Semantic memory - remember specific information (spit facts)</li>
+</ul>
+</li>
+<li>Slowing of cognitive processes
+However, adults can make up for this with their vast experience, and can employ
+better cognitive strategies</li>
+</ul>
+</li>
+</ul>
+<p>Older adults tend to remember <em>positive</em> stimuli better than negative stimuli.
+Tends to be the most positive, happiest, satisfying periods of life</p>
+<h1><a class="header" href="#intelligence-1" id="intelligence-1">Intelligence</a></h1>
+<p>The ability to</p>
+<ul>
+<li>learn or understand, or to deal with new or challenging situations</li>
+<li>apply knowledge to manipulate one's environment</li>
+<li>think abstractly as measured by some objective criteria</li>
+</ul>
+<p>Intelligence predicts a lot of things:</p>
+<ul>
+<li>Academic success</li>
+<li>Economic success</li>
+<li>Occupational success</li>
+<li>Predicts success on standardized tests, often used as gatekeepers</li>
+<li>Effects of intelligence are <em>self-perpetuating</em> (similar to rich get richer,
+but intelligence)</li>
+</ul>
+<p>Intelligence comes from:</p>
+<ul>
+<li>Gentics
+<ul>
+<li>More similar between identical twins than fraternal twins</li>
+<li>Adopted children are more similar to biological parents</li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../psya02/06-lecture.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../psya02/08-lecture.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../psya02/06-lecture.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../psya02/08-lecture.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,2981 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Notes</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="psya02/index.html"><strong aria-hidden="true">1.</strong> PSYA02 Introduction to Psychological Science II</a></li><li><ol class="section"><li class="expanded "><a href="psya02/01-lecture.html"><strong aria-hidden="true">1.1.</strong> Syllabus and Introduction to the Course</a></li><li class="expanded "><a href="psya02/02-lecture.html"><strong aria-hidden="true">1.2.</strong> Personality Psychology</a></li><li class="expanded "><a href="psya02/03-lecture.html"><strong aria-hidden="true">1.3.</strong> Personality Psychology (Part 2)</a></li><li class="expanded "><a href="psya02/04-lecture.html"><strong aria-hidden="true">1.4.</strong> Developmental Psychology</a></li><li class="expanded "><a href="psya02/05-lecture.html"><strong aria-hidden="true">1.5.</strong> Developmental Psychology (Part 2)</a></li><li class="expanded "><a href="psya02/06-lecture.html"><strong aria-hidden="true">1.6.</strong> Developmental Psychology (Part 3)</a></li><li class="expanded "><a href="psya02/07-lecture.html"><strong aria-hidden="true">1.7.</strong> Intelligence</a></li><li class="expanded "><a href="psya02/08-lecture.html"><strong aria-hidden="true">1.8.</strong> Guest Lecture AA&amp;CC</a></li><li class="expanded "><a href="psya02/09-lecture.html"><strong aria-hidden="true">1.9.</strong> Intelligence (Part 2)</a></li><li class="expanded "><a href="psya02/10-lecture.html"><strong aria-hidden="true">1.10.</strong> Emotion</a></li><li class="expanded "><a href="psya02/11-lecture.html"><strong aria-hidden="true">1.11.</strong> Emotion (Part 2)</a></li><li class="expanded "><a href="psya02/12-lecture.html"><strong aria-hidden="true">1.12.</strong> Social Psychology</a></li><li class="expanded "><a href="psya02/13-lecture.html"><strong aria-hidden="true">1.13.</strong> Social Psychology (Part 2)</a></li><li class="expanded "><a href="psya02/14-lecture.html"><strong aria-hidden="true">1.14.</strong> Social Psychology (Part 3)</a></li><li class="expanded "><a href="psya02/15-lecture.html"><strong aria-hidden="true">1.15.</strong> Health Psychology</a></li><li class="expanded "><a href="psya02/16-lecture.html"><strong aria-hidden="true">1.16.</strong> Health Psychology (Part 2)</a></li><li class="expanded "><a href="psya02/17-lecture.html"><strong aria-hidden="true">1.17.</strong> Clinical Psychology</a></li><li class="expanded "><a href="psya02/18-lecture.html"><strong aria-hidden="true">1.18.</strong> Clinical Psychology (Part 2)</a></li><li class="expanded "><a href="psya02/19-lecture.html"><strong aria-hidden="true">1.19.</strong> Clinical Psychology (Part 3)</a></li><li class="expanded "><a href="psya02/20-lecture.html"><strong aria-hidden="true">1.20.</strong> Therapies</a></li><li class="expanded "><a href="psya02/21-lecture.html"><strong aria-hidden="true">1.21.</strong> Therapies (Part 2)</a></li><li class="expanded "><a href="psya02/22-lecture.html"><strong aria-hidden="true">1.22.</strong> Therapies (Part 3)</a></li></ol></li><li class="expanded "><a href="cscc69/index.html"><strong aria-hidden="true">2.</strong> CSCC69 Operating Systems</a></li><li><ol class="section"><li class="expanded "><a href="cscc69/intro.html"><strong aria-hidden="true">2.1.</strong> Introduction to Operating Systems</a></li><li class="expanded "><a href="cscc69/bootstrap.html"><strong aria-hidden="true">2.2.</strong> Bootstrapping</a></li><li class="expanded "><a href="cscc69/syscalls.html"><strong aria-hidden="true">2.3.</strong> System Calls</a></li><li class="expanded "><a href="cscc69/sync.html"><strong aria-hidden="true">2.4.</strong> Synchronization</a></li><li><ol class="section"><li class="expanded "><a href="cscc69/peterson.html"><strong aria-hidden="true">2.4.1.</strong> Peterson's Solution</a></li><li class="expanded "><a href="cscc69/locks.html"><strong aria-hidden="true">2.4.2.</strong> Locks</a></li><li class="expanded "><a href="cscc69/semaphores.html"><strong aria-hidden="true">2.4.3.</strong> Semaphores</a></li><li class="expanded "><a href="cscc69/monitors.html"><strong aria-hidden="true">2.4.4.</strong> Monitors</a></li></ol></li><li class="expanded "><a href="cscc69/sched.html"><strong aria-hidden="true">2.5.</strong> Scheduling</a></li><li><ol class="section"><li class="expanded "><a href="cscc69/non-preemp.html"><strong aria-hidden="true">2.5.1.</strong> Non-preemptive</a></li><li class="expanded "><a href="cscc69/preemp.html"><strong aria-hidden="true">2.5.2.</strong> Preemptive</a></li></ol></li></ol></li><li class="expanded "><a href="cscc63/index.html"><strong aria-hidden="true">3.</strong> CSCC63 Computability and Complexity</a></li><li><ol class="section"><li class="expanded "><a href="cscc63/intro.html"><strong aria-hidden="true">3.1.</strong> Introductions and Definitions</a></li><li><ol class="section"><li class="expanded "><a href="cscc63/examples/even-ones-tm.html"><strong aria-hidden="true">3.1.1.</strong> Even Ones TM</a></li></ol></li><li class="expanded "><a href="cscc63/proof-methods.html"><strong aria-hidden="true">3.2.</strong> Proof Methods</a></li><li class="expanded "><a href="cscc63/turing-machines.html"><strong aria-hidden="true">3.3.</strong> Turing Machines</a></li><li><ol class="section"><li class="expanded "><a href="cscc63/accept-tm.html"><strong aria-hidden="true">3.3.1.</strong> Accept TM</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Notes</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#psya02-introduction-to-psychology-ii" id="psya02-introduction-to-psychology-ii">PSYA02 Introduction to Psychology II</a></h1>
+<p>University of Toronto Scarborough<br />
+Introduction to Clinical, Developmental, Personality and Social Psychology<br />
+Winter 2020</p>
+<h2><a class="header" href="#general-course-information" id="general-course-information">General Course Information</a></h2>
+<p>This course is the second part of Introduction to Psychology. Along with PSYA01, this course provides students
+with an overview of the foundational aspects of psychological science. In PSYA02, we will continue covering
+some of the basic building blocks of psychology, such as intelligence, emotion, social psychology, and personality.
+We?ll also spend some time discussing developmental change across the lifespan. Finally, we?ll finish the term
+by exploring atypical patterns in psychology, including psychological disorders and the treatment of them.
+We think that there is something for everyone in this course. Even if you don?t think that you have thought deeply
+about psychology before, we in fact are all amateur psychological scientists, constantly pondering and analyzing
+our own psychological states and those of others around us. We hope that you will find aspects of this course to
+be applicable to and enriching of your daily lives. </p>
+<p>After you finish the PSYA01 and PSYA02 sequence of courses, you?ll be prepared to dive further into psychological
+science at the B level. We hope that, after this experience, you?ll be motivated to do so!</p>
+<h2><a class="header" href="#learning-objectives" id="learning-objectives">Learning Objectives</a></h2>
+<p>By the time you finish this course, you should...</p>
+<ul>
+<li>...have a basic understanding of the major concepts, findings, and theories in personality, developmental, social, 
+health, and clinical psychology</li>
+<li>...be comfortable critiquing a product of pop science using empirical data and theories from psychological science</li>
+<li>...have practice applying concepts, findings, and theories from psychological science to real world scenarios</li>
+<li>...be able to think critically about competing theoretical claims in psychology</li>
+<li>...have practice critiquing peers? written work and incorporating such feedback into your own written work</li>
+<li>...have thought deeply about what place the study of psychological science will have in the rest of your university
+career and beyond</li>
+</ul>
+<h1><a class="header" href="#syllabus-and-introduction-to-the-course" id="syllabus-and-introduction-to-the-course">Syllabus and Introduction to the Course</a></h1>
+<h2><a class="header" href="#professor-info" id="professor-info">Professor Info</a></h2>
+<ul>
+<li><strong>Name</strong>: Kyle Danielson</li>
+<li><strong>Email</strong>: k.danielson@utoronto.ca</li>
+<li><strong>Office Hours</strong>: Wednesdays 13:45-14:45 PO103, room 108</li>
+</ul>
+<h2><a class="header" href="#course-coordinator" id="course-coordinator">Course Coordinator</a></h2>
+<ul>
+<li><strong>Name</strong>: Ainsley</li>
+<li><strong>Email</strong>: psya02@utsc.utoronto.ca</li>
+<li><strong>Office Hours</strong>: Every weekday 10-12:00, 14-16:00 SW427C</li>
+</ul>
+<h2><a class="header" href="#textbook" id="textbook">Textbook</a></h2>
+<p>An Introduction to Psychological Science 2nd Canadian Edition
+Mark Krause, Daniel Corts, Stephen Smith, Dan Dolderman</p>
+<h2><a class="header" href="#software" id="software">Software</a></h2>
+<ul>
+<li><strong>mTuner</strong>: online quiz software</li>
+<li><strong>Top Hat</strong>: in-time multiple choice</li>
+<li><strong>PeerScholar</strong>: essay drafting, peer feedback, and revisions</li>
+<li><strong>SONA</strong>: Signup for learning how research is conducted</li>
+</ul>
+<h2><a class="header" href="#exams" id="exams">Exams</a></h2>
+<ul>
+<li><strong>Midterm</strong>: Material from chapters 9-12</li>
+<li><strong>Final Exam</strong>: Material from chapters 13-16
+Multiple-choice questions with answer options A-E</li>
+</ul>
+<h1><a class="header" href="#personality-psychology" id="personality-psychology">Personality Psychology</a></h1>
+<p>Martin takes the same personality quiz seven times. Each time, he gets a different result.
+What is a characteristic of this quiz?</p>
+<ul>
+<li>High validity</li>
+<li>Low validity</li>
+<li>High reliability</li>
+<li>Low reliability</li>
+</ul>
+<blockquote>
+<p>Low reliability</p>
+</blockquote>
+<p>In the whole population, which of the following personality traits is likely to be most highly
+correlated with the trait &quot;helpful&quot;?</p>
+<blockquote>
+<p>Uncooperative</p>
+</blockquote>
+<h2><a class="header" href="#personality" id="personality">Personality</a></h2>
+<p>Personality is an individual's characteristic of:</p>
+<ul>
+<li>Behaviour</li>
+<li>Thought</li>
+<li>Feeling</li>
+</ul>
+<p>Personalities are relatively stable throughout our lifetimes. We can somewhat predict what someone
+will be like when they're old based on what their personality is now.
+Even though the way we act towards a group of friends may be different from how we act in a
+professional setting, there are a lot of similarities between them.</p>
+<p>We study personalities using two different approaches:</p>
+<ul>
+<li>Idiographic approach - individual differences (each person)</li>
+<li>Nomothetic approach - common trends in the population</li>
+</ul>
+<p>We study two components of personalities:</p>
+<ul>
+<li>Describing personality:
+<ul>
+<li>Characteristics of a person</li>
+</ul>
+</li>
+<li>Explaining personality:
+<ul>
+<li>Why doesnt everyone have the same personality?</li>
+<li>Not just 'why im introverted', but 'what causes me to be introverted'</li>
+<li>Personality theories</li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#measuring-personality" id="measuring-personality">Measuring personality</a></h2>
+<ul>
+<li>Observe an individual's personality
+<ul>
+<li>put people in a certain situation and see how they behave</li>
+<li>observe people in their day-to-day life</li>
+</ul>
+</li>
+</ul>
+<p>Naturalistic observation - Observe people in their day-to-day life
+Demand characteristics - People watching alters their behaviour</p>
+<h2><a class="header" href="#personality-inventories-testsscales" id="personality-inventories-testsscales">Personality Inventories (tests/scales)</a></h2>
+<ul>
+<li>People self-report their behaviour</li>
+<li>People know themselves better and can share their thoughts and feelings, usually hidden</li>
+<li>Personality tests should be administered by people who are trained</li>
+<li>The way the tests are administered, the interpretation, can affect the results</li>
+<li>Social Desirability Bias - Want to answer in a way that is socially acceptable</li>
+</ul>
+<p>Types of questions:</p>
+<ul>
+<li>Yes/no questions</li>
+<li>Scalar questions 1-10</li>
+</ul>
+<h2><a class="header" href="#a-hrefhttpwwwgotoquizcompersonality_quiz_1bad-personality-testsa" id="a-hrefhttpwwwgotoquizcompersonality_quiz_1bad-personality-testsa"><a href="http://www.gotoquiz.com/personality_quiz_1">Bad Personality Tests</a></a></h2>
+<ul>
+<li>Question options are not exhaustive (may not find an answer that applies to them)</li>
+<li>Barnem Effect - Descriptions are so vague that everyone can see themselves in that situation</li>
+<li>Don't know what the tests are trying to measure</li>
+</ul>
+<h2><a class="header" href="#validity" id="validity">Validity</a></h2>
+<ul>
+<li>High validity - measure the psychological construct they are designed to measure</li>
+<li>Compare with other tests that are old and validated</li>
+<li>Look at whether people actually portray what results we give them</li>
+<li>MMPI is widely reliable, clinically valid personality test - contains lots of true/false/cant answer questions</li>
+</ul>
+<h2><a class="header" href="#reliability" id="reliability">Reliability</a></h2>
+<ul>
+<li>Take the same multiple choice many times, but get different answer
+<ul>
+<li>Consistency of results</li>
+</ul>
+</li>
+<li>Blood tests are 100% reliable</li>
+<li>Psychological tests are never 100% reliable, because personalities change from state to state</li>
+</ul>
+<h2><a class="header" href="#mmpi-test" id="mmpi-test">MMPI Test</a></h2>
+<p>Minnesota Multiphasic Personality Inventory(MMPI) is a widely reliable, clinically valid personality test
+Contains true/false/null questions, that force you into one category or another
+A lot of questions cause fatigue, tires you out so you dont want to fake ur answers
+Test administrators bias is less of a problem with true/false responses
+Test takers may not know everything about themselves
+Test takes can be biased, and report socially desirable traits</p>
+<h2><a class="header" href="#validity-scales" id="validity-scales">Validity scales</a></h2>
+<p>Validity scales are not meant to measure personality, but measure their test-taking
+F-scale: high rates of &quot;true&quot; responses can indicate severe psychopathology or over-reporting</p>
+<ul>
+<li>&quot;Evil spirits possess me at times&quot;</li>
+<li>&quot;There is something wrong with my mind&quot;</li>
+<li>&quot;I have gotten many physical beatings&quot;
+Lie-scale: high rates of &quot;false&quot; responses may indicate lying</li>
+<li>&quot;I dont always tell the truth&quot;</li>
+<li>&quot;Sometimes I feel like swearing&quot;</li>
+<li>&quot;Once in a while I think about things that are too bad to talk about&quot;
+?-scale: high rates of &quot;idk&quot; may indicate an invalid test</li>
+</ul>
+<h1><a class="header" href="#personality-psychology-part-2" id="personality-psychology-part-2">Personality Psychology (Part 2)</a></h1>
+<p>Which of the following does the MMPI NOT use to increase its validity?</p>
+<blockquote>
+<p>Scalar questions</p>
+</blockquote>
+<p>Which of the following questions might appear on the MMPI lie-scale?</p>
+<blockquote>
+<p>Sometimes I meet someone with whom I don't get along</p>
+</blockquote>
+<p>Sheila considers herself to be very responsible. She makes her bed every
+morning when she gets up, and prepares breakfast for herself and her sister,
+who is a little lazier than she is. She is never late for work, and tends to
+exercise most days when she finishes. In which of the Big Five traits does
+Sheila seem to score highly?</p>
+<blockquote>
+<p>Conscientiousness</p>
+</blockquote>
+<h2><a class="header" href="#personality-theories" id="personality-theories">Personality Theories</a></h2>
+<p>Psychologists also want to describe and explain personality</p>
+<h3><a class="header" href="#trait-approach" id="trait-approach">Trait approach</a></h3>
+<ol>
+<li>Individuals rate themselves on hundreds of traits</li>
+<li>Highly correlated traits are combined into factors (outgoing -&gt; extrovertedness)</li>
+<li>No correlation between traits are separate factors</li>
+</ol>
+<p>Researches grouped them into five factors that have very little correlation <strong>OCEAN</strong></p>
+<ol>
+<li>Openness
+<ul>
+<li>High: Creative, artisitic, curious, imaginative, nonconforming</li>
+<li>Low:  Conventional, down-to-earth</li>
+</ul>
+</li>
+<li>Conscientiousness
+<ul>
+<li>High: Ambitious, organized, realiable</li>
+<li>Low:  Unreliable, lazy, casual, spontaneous</li>
+</ul>
+</li>
+<li>Extraversion
+<ul>
+<li>High: Talkative, optimistic, social, affectionate</li>
+<li>Low:  Reserved, comfortable with being alone, introverted</li>
+</ul>
+</li>
+<li>Agreeableness
+<ul>
+<li>High: Good-natured, trusting, supportive</li>
+<li>Low:  Rude, uncooperative, irritable, hostile, competitive</li>
+</ul>
+</li>
+<li>Neuroticism
+<ul>
+<li>High: Worried, insecure, anxiety-prone</li>
+<li>Low:  Tranquil, secure, emotionally stable</li>
+</ul>
+</li>
+</ol>
+<p>Neuroticism is reverse-coded, i.e. its better to score lower than higher</p>
+<p>Personality traits are relatively stable and stability increases across the lifetime</p>
+<ul>
+<li>People age 11 compared to themself at age 6 are highly correlated</li>
+<li>People age 39 compared to themself at age 30 are even more highly correlate</li>
+</ul>
+<p><strong>Rank-order</strong>: &quot;If in a sample of 100 people, you ranked highest in openness, it is likely that
+you will be among the highest in openness among the general population as well&quot;</p>
+<p><strong>Mean-level Changes</strong>: As a group of people in a certain age group i.e. 20-30, everyone's
+traits change similarly, so rank-order doesnt change</p>
+<p><strong>Intraindividual Change</strong>: Significant changes in a person's personality from one time to the next</p>
+<ul>
+<li>Occurs after life-changing experiences, including trauma.</li>
+<li>Changes the person's rank-order in the population.</li>
+</ul>
+<p><strong>Personality States</strong>: Although personality traits are stable and remain consistent, personality states
+may alter the way we express them:</p>
+<ul>
+<li>Location</li>
+<li>Associations</li>
+<li>Activities</li>
+<li>Mood</li>
+</ul>
+<h2><a class="header" href="#biological-approach" id="biological-approach">Biological Approach</a></h2>
+<p>Traits takes a very biological approach to describing personalities.
+Genetics is the largest <strong>single</strong> factor</p>
+<table><thead><tr><th>Trait Dimension</th><th>Heritability</th></tr></thead><tbody>
+<tr><td>Openness</td><td>0.45</td></tr>
+<tr><td>Conscientiousness</td><td>0.38</td></tr>
+<tr><td>Extraversion</td><td>0.49</td></tr>
+<tr><td>Agreeableness</td><td>0.35</td></tr>
+<tr><td>Neuroticism</td><td>0.41</td></tr>
+</tbody></table>
+<p><strong>Herability Factor</strong>: A range [0,1] that indicates how much of a factor genetics
+influences a trait. 0 means no influence, 1 means completely responsible for the trait</p>
+<p><strong>Temperament</strong>: Infant's characteristic activity level, mood, attention span, and
+distractability.</p>
+<ul>
+<li>Infant's temperament is predictive of adult personalities</li>
+</ul>
+<p><strong>WEIRD</strong>: Western, Educated, Industrialized, Rich, and Democratic</p>
+<ul>
+<li>Most research on Big Five are conducted in WEIRD cultures</li>
+<li><strong>Prevalence</strong> of personality traits <em>does</em> vary from culture to culture</li>
+<li>Culture may play a role in determinating an individual's personality</li>
+</ul>
+<h2><a class="header" href="#behaviourist-approach" id="behaviourist-approach">Behaviourist Approach</a></h2>
+<p>The next four approaches to describing personality focus on experiences</p>
+<p><strong>Behaviourism</strong>: Produce, reinforce, and repeat a behaviour</p>
+<ul>
+<li>Training a dog, or lab rats to do something when blowing a whistle</li>
+<li>Behaviourists believe that the same principle applies to human personality
+<ol>
+<li>A human produces a behaviour (smiling at a peer)</li>
+<li>Behaviour is reinforced - something good happens as a result (the peer becomes friendly)</li>
+<li>Behaviour is repeated (person smiles more often)</li>
+</ol>
+</li>
+</ul>
+<h2><a class="header" href="#social-cognitive-approach" id="social-cognitive-approach">Social-Cognitive Approach</a></h2>
+<p>In this approach, personality is how we deal with situations encountered in daily life</p>
+<ul>
+<li>How we <strong>construct</strong> situations in our own minds</li>
+<li>How we <strong>respond</strong> to those situations
+Distinct from trait approach, in which people behave the same way across mosts situations</li>
+</ul>
+<p><strong>Person-Situation Controversy</strong>: Personality is defined more by the situation we're in instead of traits</p>
+<ul>
+<li>Introverted people do not spend much more time alone than extroverted people do</li>
+</ul>
+<p><strong>Situation-Dependent</strong>:</p>
+<ul>
+<li>Would you speed while driving?</li>
+<li>Would you rob a bank?
+Both are likely governed by agreeableness, but an agreeable person is more likely to speed than to rob a bank</li>
+</ul>
+<p><strong>Personal Constructs</strong>: The way in which we organize people in our lives</p>
+<ul>
+<li>Resonsible</li>
+<li>Outgoing</li>
+<li>Lazy</li>
+</ul>
+<p><strong>Outcome Expectancies</strong>: How we expect a behaviour to bring us <strong>closer</strong> or <strong>further</strong> from our goals</p>
+<ul>
+<li>Be more confident -&gt; Get a job</li>
+<li>Responsible -&gt; Finish homework on time</li>
+</ul>
+<h1><a class="header" href="#developmental-psychology" id="developmental-psychology">Developmental Psychology</a></h1>
+<p>Match each Big Five personality dimension with the personality trait to which it is highly correlated</p>
+<ol>
+<li>Openness to new experience</li>
+<li>Conscientiousness</li>
+<li>Extraversion</li>
+<li>Agreeableness</li>
+<li>Neuroticism</li>
+</ol>
+<blockquote>
+<p>Hesitant, Lazy, Outgoing, Friendly, Level-headed</p>
+</blockquote>
+<p>According to the trait theory of personality, what s the largest factor in determining an individual's personality?</p>
+<ol>
+<li>Parental Discipline</li>
+<li>Genetics</li>
+<li>Early childhood experience</li>
+<li>Cultural values</li>
+<li>Gender</li>
+</ol>
+<blockquote>
+<p>Genetics</p>
+</blockquote>
+<p>Samantha has just taken a personality test designed to measure her conscientiousness. The test is clinically valid
+reliable. Samantha scores in the 89th percentile for conscientiousnes (she is highly conscientious). Based on
+this result, on which of the other Big Five traits do you expect Samantha to also score highly?</p>
+<ol>
+<li>Openness to new experience</li>
+<li>Extraversion</li>
+<li>Agreeableness</li>
+<li>Neuroticism</li>
+<li>None of the above</li>
+</ol>
+<blockquote>
+<p>None of the above</p>
+</blockquote>
+<p>Aaron feels that his younger son, Jacob, is unattractive and not very smart. He accuses his wife of picking
+on Jacob and favouring their other son. What defence mechanisms might Aaron be displaying in his accusation
+of his wife?</p>
+<ol>
+<li>Displacement</li>
+<li>Projection</li>
+<li>Sublimation</li>
+<li>Reaction Formation</li>
+<li>Identification</li>
+</ol>
+<blockquote>
+<p>Projection</p>
+</blockquote>
+<h2><a class="header" href="#psychodynamic-approach" id="psychodynamic-approach">Psychodynamic Approach</a></h2>
+<h3><a class="header" href="#sigmund-freud-maybe-from-psya01" id="sigmund-freud-maybe-from-psya01">Sigmund Freud (Maybe from PSYA01)</a></h3>
+<ul>
+<li>Austrian physician practicing neurology, study of disorders of the nervous system.</li>
+<li>Treated patients for &quot;hysteria&quot;</li>
+<li>Developed <strong>psychoanalysis</strong> based on patient's free associations, fantasies, and dreams</li>
+</ul>
+<blockquote>
+<p>Hysteria - Exagerrated or uncontrollable emotion or excitement</p>
+</blockquote>
+<p>Psychodynamic theory extends from Freud's approach</p>
+<ul>
+<li>Personality is formed by needs, strivings, and desires largely operating <strong>outside of awareness</strong></li>
+<li>Motives that can also produce emotional disorders</li>
+<li>Called the <strong>dynamic unconscious</strong>
+<blockquote>
+<p>An active system encompassing a lifetime of hidden memories, the person's deepest
+instincts and desires, and the person's inner struggle to control those forces</p>
+</blockquote>
+</li>
+</ul>
+<h3><a class="header" href="#psychodynamic-theory" id="psychodynamic-theory">Psychodynamic Theory</a></h3>
+<p>Freud divided this dynamic (un)conscious into three parts</p>
+<ul>
+<li>Id - unconscious, animal desires</li>
+<li>Ego - more conscious, control animalistic desires, for life's practical demands
+<ul>
+<li>planning</li>
+<li>future goals</li>
+<li>can't constantly act on id, or we can't advance our goals</li>
+</ul>
+</li>
+<li>Superego - internalize cultural/social rules
+Personality is determined by which of these parts of the unconscious are dominant</li>
+</ul>
+<p>Conflicts between the three parts cause <strong>anxiety</strong>
+To resolve this anxiety, we rely on <strong>defence mechanisms</strong></p>
+<ul>
+<li>Repression - push thoughts away, ignore, and deny</li>
+<li>Rationalization - explain, give motivation for feeling </li>
+<li>Reaction formation - acting in way that is opposite of insecurity
+<blockquote>
+<p>person that is weak starts acting tough and macho</p>
+</blockquote>
+</li>
+<li>Projection - criticizing another person for behaving in a way you feel yourself
+<blockquote>
+<p>having a bad time at a party, and saying someone else looks like they're having a bad time</p>
+</blockquote>
+</li>
+<li>Regression - return to a more childish version of yourself</li>
+<li>Displacement - take out anger to someone/something that is not the cause of the feeling
+<blockquote>
+<p>slamming a door after an argument</p>
+</blockquote>
+</li>
+<li>Identification - identify with the cause of the negative feelings
+<blockquote>
+<p>kid being bullied becomes a bully themself</p>
+</blockquote>
+</li>
+<li>Sublimation - taking their negative emotionality and turning it into something positive
+<blockquote>
+<p>kid experiences bullying, and starts anti-bullying club</p>
+</blockquote>
+</li>
+</ul>
+<h3><a class="header" href="#projective-techniques" id="projective-techniques">Projective Techniques</a></h3>
+<p>Analyze responses to standard series of ambiguous stimuli. Reveal inner aspects of individual's personalities.
+Pictures of people, objects, events, or abstract stimuli shown to subjects</p>
+<ul>
+<li>Rorschach Ink Blot test
+<ul>
+<li>inner thoughts and feelings revealed by analysis of their responses</li>
+<li>common set of responses, uncommon might mean something wrong</li>
+</ul>
+</li>
+<li>Thematic apperception test (TAT)
+<ul>
+<li>shown a card and told to make a story based on it</li>
+<li>common sets of responses</li>
+<li>might correlate similar themes to similar problems
+<img src="psya02/./pictures/rorschach.png" alt="rorschach" /></li>
+</ul>
+</li>
+</ul>
+<p>Lots of criticisms:</p>
+<ul>
+<li>Clinician or social pressure can alter results. Patient crafts responses</li>
+<li>Results difficult to interpret</li>
+<li>Interpretations are too subjective, relies on clinician's own psychology</li>
+<li>Mixed empirical evidence to support them</li>
+<li>Focus on after-the-fact interpretation, no predictive power</li>
+<li>Reject free will, everything predetermined by early childhood experience</li>
+<li>Based on biased sample</li>
+<li>Are unfalsifiable, hard to argue results are right or wrong</li>
+</ul>
+<h2><a class="header" href="#humanistic-existential-approach" id="humanistic-existential-approach">Humanistic-Existential Approach</a></h2>
+<p>Argues humans seek out a realization of their inner potential
+(self-actualization)</p>
+<ul>
+<li>pursuit of knowledge</li>
+<li>expression of creativity</li>
+<li>spiritual enlightenment</li>
+<li>give back to society</li>
+</ul>
+<h3><a class="header" href="#maslows-needs-hierarchy" id="maslows-needs-hierarchy">Maslow's Needs Hierarchy</a></h3>
+<p>People need to satisfy needs from the bottom of the pyramid before we can move
+up. Personality differences arise from environmental constraints against
+climbing our needs hierarchy</p>
+<p><img src="psya02/./pictures/needs-hierarchy.png" alt="needs-hierary" /></p>
+<blockquote>
+<p>Sarah is a highly creative person with a natural talent for story-telling. However, she lives in a war
+torn developing nation, and is too busy making sure her family have enough to eat and are safe. She
+cannot explore her talent. She is less agreeable than she would be if she could explore her talent.</p>
+</blockquote>
+<h2><a class="header" href="#human-development-part-1" id="human-development-part-1">Human Development (Part 1)</a></h2>
+<p>Examination of <strong>continuity</strong> and <strong>change</strong> across the lifespan on these topics:</p>
+<ul>
+<li>
+<p>Sensation and perception</p>
+</li>
+<li>
+<p>Cognition and language</p>
+</li>
+<li>
+<p>Emotion</p>
+</li>
+<li>
+<p>Social and moral behaviour
+Will cover four main periods of human development</p>
+</li>
+<li>
+<p>Prenatality and infancy (conception-2,3 years)</p>
+</li>
+<li>
+<p>Childhood (2,3-11 years)</p>
+</li>
+<li>
+<p>Adolescence (12-17 years)</p>
+</li>
+<li>
+<p>Adulthood (18-death)</p>
+</li>
+<li>
+<p>Early memories are often vague or non-existent.</p>
+</li>
+<li>
+<p>Early experiences in infancy are crucial to normal development</p>
+</li>
+<li>
+<p>Gives rise to many individual differences across human population</p>
+</li>
+<li>
+<p>Human experience begins with <strong>conception</strong> not birth</p>
+</li>
+<li>
+<p>Infant at 20-22 weeks can experience sound </p>
+</li>
+</ul>
+<h3><a class="header" href="#prenatal-development" id="prenatal-development">Prenatal Development</a></h3>
+<p>Period of time prior to birth</p>
+<ul>
+<li>Gestational age is time since beginning of last menstrual period
+<blockquote>
+<p>Mothers dont always know time of fertilization but know time of last period</p>
+</blockquote>
+</li>
+</ul>
+<h1><a class="header" href="#developmental-psychology-part-2" id="developmental-psychology-part-2">Developmental Psychology (Part 2)</a></h1>
+<p>After Ali's baby brother was born, she began to talk baby-talk and suck her thumb as she did when she
+was younger. What defence mechanism might she be displaying?</p>
+<ol>
+<li>Repression</li>
+<li>Rationalization</li>
+<li>Regression</li>
+<li>Displacement</li>
+<li>Identification</li>
+</ol>
+<blockquote>
+<p>Regression</p>
+</blockquote>
+<p>Based on our discussions last lecture, which of the following would NOT be a logical criticism of the
+Rorschach ink blot test?</p>
+<ol>
+<li>There is not enough data to know what a 'normal' response should look like</li>
+<li>The participants' responses to the images are subjective and highly varied</li>
+<li>The clinician's interpretation of the participant's response can be subjective</li>
+<li>The results are difficult to quantify.</li>
+</ol>
+<blockquote>
+<p>There is not enough data to know what a 'normal' response should look like</p>
+</blockquote>
+<p>Why do physicians, psychologists, and other people interested in prenatal development use gestational
+age instead of fertilization age to measure the age of a fetus?</p>
+<ol>
+<li>Gestational age is a more accurate predictor of when the fetus will be born</li>
+<li>Gestational age is a more accurate predictor of when the fetus will progress through various prenatal stages</li>
+<li>Pregnancies typically last for exactly 40 weeks when measured using gestational age</li>
+<li>Many women do not know the exact date of fertilization</li>
+</ol>
+<blockquote>
+<p>Many women do not know the exact date of fertilization</p>
+</blockquote>
+<p>Which of the following developmental processes consists of the encapsulation of axons in a fatty
+sheath, increasing the speed and efficiency of neural processing?</p>
+<ol>
+<li>Synaptogenesis</li>
+<li>Neurogenesis</li>
+<li>Synaptic pruning</li>
+<li>Myelination</li>
+<li>Neural tube formation</li>
+</ol>
+<blockquote>
+<p>Myelination</p>
+</blockquote>
+<h2><a class="header" href="#before-birth" id="before-birth">Before Birth</a></h2>
+<p>Three states of prenatal development</p>
+<ol>
+<li>Germinal (0-2 weeks)
+<ul>
+<li>Period of the zygote (one-celled fertilized egg)</li>
+<li>Zygote travels through the fallopian tube</li>
+<li>Defined as 0-2 weeks gestational age (conception until implantation)</li>
+</ul>
+</li>
+<li>Embryonic (3-8 weeks)
+<ul>
+<li>Begins when zygote implants in the wall of the uterus</li>
+<li>Cell differentiation - skins cells, muscle cells, etc.</li>
+</ul>
+</li>
+<li>Fetal (9 weeks - birth)
+<ul>
+<li>Skeleton and muscles develop, allowing movement</li>
+<li>Brain development occurs rapidly, allowing detection of and learning from early experiences</li>
+<li>Neurogenesis and myelination</li>
+</ul>
+</li>
+</ol>
+<p><strong>Exogenous experience</strong>: Experience that comes from outside the organism</p>
+<ul>
+<li>Tastes, smells, sound, tactile sensation are exogenous mostly exogenous for fetuses</li>
+</ul>
+<p><strong>Endogenous stimulation</strong>: Stimuli generated by the organism itself</p>
+<p><strong>Fetal Vision</strong></p>
+<ul>
+<li>Very little light coming into the womb</li>
+<li>Endogenous firing of cells to allow sense of sight to develop</li>
+</ul>
+<p><strong>Fetal Audition</strong></p>
+<ul>
+<li>Heartbeat changes in reaction to external voices being played</li>
+<li>Different reaction to music than to human speech</li>
+<li>Newborns recognize mother's language and voice</li>
+</ul>
+<p><strong>Fetal Olfaction</strong></p>
+<ul>
+<li>3-day old neonates turn their heads longer toward familiar amniotic fluid</li>
+<li>Babies respond better to food that mothers ate</li>
+</ul>
+<p><strong>Teratogens</strong></p>
+<ul>
+<li>External agents that cause damage/death during prenatal development</li>
+<li>Alcohol, drugs, cigarettes, etc.</li>
+<li>Raw fish (mercury)</li>
+<li>Polution and fumes</li>
+</ul>
+<p><strong>Cascading Sensitive Periods</strong></p>
+<ul>
+<li>Sensitive periods of development where teratogens most affect fetuses</li>
+<li>Periods where many sensitive periods overlap</li>
+</ul>
+<p><img src="psya02/./pictures/teratogen-table.jpeg" alt="cascading" /></p>
+<p><strong>Fetal Alcohol Spectrum Disorder</strong></p>
+<ul>
+<li>Alcohol enters blood stream before being fully metabolized by the mother</li>
+<li>Most severe complications:
+<ul>
+<li>Facial deformities</li>
+<li>Intellectual disability</li>
+<li>Attention disability</li>
+<li>Behaviour disorders</li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#birth" id="birth">Birth</a></h2>
+<ul>
+<li>Babies spend 2/3 of a day sleeping</li>
+<li>Time spent sleeping goes down as people age</li>
+<li>Time spent crying about 2 hours and increases to a peak at about 6 weeks</li>
+<li>Most non-communicative until older</li>
+<li><em>Can</em> be due to hunger, discomfort, pain, overstimulation</li>
+</ul>
+<h1><a class="header" href="#developmental-psychology-part-3" id="developmental-psychology-part-3">Developmental Psychology (Part 3)</a></h1>
+<p>Trisha is pregnant with her second baby. At 4 weeks gestational age, Trisha ingests a teratogenic substance.
+From this list, what is the fetal structure MOST likely to be adversely affected by this ingestion?</p>
+<ol>
+<li>Teeth</li>
+<li>Genitalia</li>
+<li>Palate</li>
+<li>Heart</li>
+</ol>
+<blockquote>
+<p>Heart</p>
+</blockquote>
+<p>Which of the following pieces of evidence does NOT directly support the notion that fetal perception and
+learning takes place prior to birth?</p>
+<ol>
+<li>2-hours-old newborn Yvette turns her head away from a startling sound</li>
+<li>The heart rate of a 35-week-old fetus decreases in response to the sound of its mother's voice speaking,
+but not in response to other people speaking</li>
+<li>3-hours old newborn Mark sucks on a pacifier faster when he hears Engish, his mother's language, than
+when he hears French or Japanese.</li>
+<li>Newborn infants whose mothers ate a lot of ginger during pregnancy are more likely to turn their heads
+towards the smell of ginger than are babies whose mothers did not eat ginger during pregnancy.</li>
+</ol>
+<blockquote>
+<p>2-hours-old newborn Yvette turns her head away from a startling sound</p>
+</blockquote>
+<p>Name ONE motor reflex that a newborn baby produces. Use ONE WORD.</p>
+<blockquote>
+<p>crying</p>
+</blockquote>
+<h2><a class="header" href="#perceptual-development" id="perceptual-development">Perceptual Development</a></h2>
+<p>Begins in utero, but experiences after birth are much <em>richer</em>.</p>
+<p><strong>Sensation</strong>: Detection of physical signals in environment</p>
+<p><strong>Perception</strong>: Organization, interpretation of information to understanding of objects, individuals, events</p>
+<ul>
+<li>Infants spend more time looking at interesting, stimulating, or familiar objects and events, called <strong>preferential looking</strong>.</li>
+<li>Most prefer patterned images over gray ones (more interesting)</li>
+<li>More time looking at gray ones vs. patterned ones indicates low <strong>visual acuity</strong> (eyes arent developing well)</li>
+</ul>
+<p>Infant acuity about 20/120 and catches up quickly, adult-like at 6 months</p>
+<h2><a class="header" href="#motor-development" id="motor-development">Motor Development</a></h2>
+<p>Newborn's motor skills mostly reflexes</p>
+<p>These reflexes dissipate after infancy</p>
+<ul>
+<li>grasping - put finger in hand -&gt; baby grasps</li>
+<li>rooting - <em>feeding reflex</em>, rub check -&gt; turn head -&gt; start sucking</li>
+<li>sucking - <em>feeding reflex</em></li>
+<li>swallowing - <em>feeding reflex</em></li>
+<li>tonic neck reflex - turn head in direction arm is facing</li>
+</ul>
+<p>Thought to be evolutionary vestige (leftover)</p>
+<p>Some last for the entire lifespan</p>
+<ul>
+<li>coughing</li>
+<li>sneezing</li>
+<li>blinking</li>
+<li>withdrawal from pain</li>
+</ul>
+<p><strong>Cephalocaudal rule</strong>: Top -&gt; bottom - Tendency for motor skills to emerge in sequence from head to foot<br />
+<strong>Proximodistal rule</strong>: Inside -&gt; outside - Tendency for motor skills to emerge from the center to the periphery (far from the body)</p>
+<p><img src="psya02/./pictures/motor-development.jpg" alt="motor-develop" /></p>
+<blockquote>
+<p>Samantha is 8 months old. Which of these behaviours would you <em>not</em> expect her to be doing?<br />
+Walking up steps, walking alone</p>
+</blockquote>
+<h2><a class="header" href="#cognitive-developmet" id="cognitive-developmet">Cognitive Developmet</a></h2>
+<p>At the same time perceptual and motor abilities develop, children learn to think about the world around them.</p>
+<p><strong>Jean Piaget</strong>, Swiss psychologist pioneered understanding of cognitive development by dividing it into stages</p>
+<ol>
+<li>Sensorimotor (0-2 years)
+<ul>
+<li>Infants rely on sensual and motor movements to learn about the world</li>
+</ul>
+</li>
+<li>Pre-operational (2-6 years)
+<ul>
+<li>Move from <strong>egocentrism</strong> to <strong>sociocentrism</strong> (from only own perspective to others)</li>
+<li>Develop <strong>theory of mind</strong> - understanding behaviour guided by mental representations</li>
+</ul>
+</li>
+<li>Concrete operational (6-11 years)</li>
+<li>Formal operational (11 years - adulthood)</li>
+</ol>
+<blockquote>
+<p>More of these in textbook, make sure to look at</p>
+</blockquote>
+<p>Progress from stage to stage as they gain knowledge about the world around them</p>
+<pre><code>Acquire knowledge about some domain
+Organize into a **schema/framework**
+Acquire some new knowledge
+Fit understanding?
+    **Assimilation**: Add to existiing framework 
+Doesn't fit understanding?
+    **Accomodation**: Modify schema heavily, or create new schema
+</code></pre>
+<h3><a class="header" href="#false-belief-task" id="false-belief-task">False Belief Task</a></h3>
+<p>Change of Location task - failed by most 3 year olds<br />
+<img src="psya02/./pictures/change-location.jpg" alt="change-location" /></p>
+<p>False Belief Task - failed by most 3/4 year olds<br />
+<img src="psya02/./pictures/false-belief.png" alt="false-belief" /></p>
+<blockquote>
+<p>Would never include the mom in these tests. Babies believe mothers know everything</p>
+</blockquote>
+<p>Piaget Criticisms</p>
+<ul>
+<li>Underestimated abilities of infants and young children.
+<ul>
+<li>Infants have trouble with language abilities</li>
+<li>Are able to look in the right direction when done non-verbally</li>
+</ul>
+</li>
+<li>Stages suggest there is some kind of 'overnight switch'
+<ul>
+<li>Development is continuous</li>
+</ul>
+</li>
+<li>Underestimated how sociocentric infants are
+<ul>
+<li>Infants follow gaze of caregivers (shared attention)</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#attachment" id="attachment">Attachment</a></h3>
+<p>Emotional bond with caregivers (attachment figure). Individual differences in attachment measured by:</p>
+<ul>
+<li>Extent to which an infant uses caregiver as a <strong>secure base</strong></li>
+<li>How infant reacts to <strong>reunion</strong> with caregiver after short separations</li>
+</ul>
+<h3><a class="header" href="#strange-situation-procedure" id="strange-situation-procedure">Strange Situation Procedure</a></h3>
+<pre><code>Mother plays with baby
+Stranger enters room
+Mother leaves
+Stranger tries to play with baby
+Mother comes back (reunion)
+</code></pre>
+<ul>
+<li><strong>Secure Attachment</strong>: Most advantageous for babies moving forward</li>
+<li><strong>Insecure Attacmhemnt</strong>:
+<ul>
+<li><strong>Avoidant</strong>: Not concerned with mother when in room, avoids mother in reunion</li>
+<li><strong>Resistant/Ambivalent</strong>: Running toward mother, then acting angrily towards mother when mother tries to comfort</li>
+<li><strong>Disorganized</strong>: Fear behaviour/involuntary movement. Experienced some trauma
+<strong>Attachment style</strong> predicts:</li>
+</ul>
+</li>
+<li>Academic achievement</li>
+<li>Emotional health</li>
+<li>Relationship quality</li>
+<li>Self-esteem</li>
+</ul>
+<h1><a class="header" href="#intelligence" id="intelligence">Intelligence</a></h1>
+<p>10-month old Ian is participating in the Strange Situation paradigm. When his
+mother returns to the room for the reunion, Ian crawls to her, crying,
+and she picks him up. He reaches for her, but then pushes her away. This
+behaviour is a characteristic of what attachment style, according to Mary
+Ainsworth?</p>
+<ol>
+<li>Secure</li>
+<li>Insecure-ambivalent</li>
+<li>Insecure-avoidant</li>
+<li>Disorganized/disoriented</li>
+<li>Insecure-pushing</li>
+</ol>
+<blockquote>
+<p>Insecure-ambivalent</p>
+</blockquote>
+<p>Piaget argued that children develop cognitively by creating and modifying
+the schemas by which they understand the world. Which of the following
+terms describes the process by which a child encounters a new stimulus
+that they can incorporate into their existing schema?</p>
+<ol>
+<li>Equilibrium</li>
+<li>Accomodation</li>
+<li>Assimilation</li>
+<li>Theory of mind</li>
+<li>False belief</li>
+</ol>
+<blockquote>
+<p>Assimilation</p>
+</blockquote>
+<p>Marcel is a 4-year old boy. Which of the following terms is he most likely
+to use to describe himself?</p>
+<ol>
+<li>Shy</li>
+<li>Bright</li>
+<li>Strong</li>
+<li>Outgoing</li>
+<li>Generous</li>
+</ol>
+<blockquote>
+<p>Strong - Usually describe themselves physically and in positive terms</p>
+</blockquote>
+<h2><a class="header" href="#adolescence" id="adolescence">Adolescence</a></h2>
+<p>Period of development between childhood and adulthood, about age 12-25</p>
+<ul>
+<li>Begins at puberty (different based on age, gender, etc.)</li>
+<li>Ends at brain maturity - increase and refinement of connections in the
+prefrontal cortex
+Biological definition of adolescence is different from age 18, usually
+associated with right to vote, drive, drink, etc.</li>
+</ul>
+<p>Major psychological changes also occur affecting:</p>
+<ul>
+<li>Self-esteem</li>
+<li>Identity</li>
+<li>Sexuality</li>
+<li>Morality</li>
+</ul>
+<p><strong>Executive Behaviours</strong>: Prefrontal cortex is responsible for decision
+making, goal-driven behaviour, inhibition</p>
+<p><strong>Positivity bias(self-enhancement)</strong> -Kids often describe themselves positively</p>
+<ul>
+<li>4-year olds almost always over-enhance</li>
+<li>6-year olds do so at a lesser degree</li>
+<li>Less pronounced for peers than for self</li>
+</ul>
+<p><strong>Protective Optimism</strong>-Believe positive traits are unchangeable, and
+negative traits have the potential to change easily -
+<em>If they are nice, they will be nice forever</em></p>
+<p>Both bias and optimism decline quickly at school age, due to</p>
+<ul>
+<li>Evaluation compared to other kids their age (objective evaluation)</li>
+<li>Cognitive skills increase, as we learn more about how the world works</li>
+<li>Begin to view the world from not just their own perspectives, and learn
+that other people may not see them the way they see themselves</li>
+</ul>
+<p>Adolescents slowly gain self esteem through development, and adults slowly
+lose self esteem as they age. Highly correlated with medical decline.</p>
+<p>Relatively speaking, self-esteem is relatively consistent across the lifespan.</p>
+<ul>
+<li>Maintain rank-order stability</li>
+<li>Genetics plays a big factor, but not all</li>
+</ul>
+<h2><a class="header" href="#identity-formation" id="identity-formation">Identity Formation</a></h2>
+<p>Finding out what oneself is. How one defines oneself for the rest of one's life.</p>
+<p><strong>Erik Erikson</strong>: German-American developmental scientist, developed a theory
+of <em>conflicts</em> and <em>resolutions</em>.</p>
+<ul>
+<li>Believed that adolescents chief task was to figure out who they were</li>
+<li><em>Abstract thinking</em></li>
+<li><em>Self-socialization</em> - Choosing friends and social groups</li>
+<li><em>Personal fable</em> - &quot;No one can possibly understand me&quot;</li>
+</ul>
+<p>Challenges that the adolescent experiences:</p>
+<ul>
+<li>Identity confusion - Not knowing who they are</li>
+<li>Identity foreclosure - Choose an identity too early (picking careers)</li>
+<li>Negative identity - Opposition to others/social norms</li>
+</ul>
+<p>Adults experience widespread changes to their physiology for the remainder
+of their lives including</p>
+<ul>
+<li>Changes in sensory systems (vision, audition, etc.)</li>
+<li>Neuron (brain cell death)
+<ul>
+<li>Causes changes in memory storage and retrieval at different rates
+<ul>
+<li>Episodic memory - remember an event that happened in time</li>
+<li>Semantic memory - remember specific information (spit facts)</li>
+</ul>
+</li>
+<li>Slowing of cognitive processes
+However, adults can make up for this with their vast experience, and can employ
+better cognitive strategies</li>
+</ul>
+</li>
+</ul>
+<p>Older adults tend to remember <em>positive</em> stimuli better than negative stimuli.
+Tends to be the most positive, happiest, satisfying periods of life</p>
+<h1><a class="header" href="#intelligence-1" id="intelligence-1">Intelligence</a></h1>
+<p>The ability to</p>
+<ul>
+<li>learn or understand, or to deal with new or challenging situations</li>
+<li>apply knowledge to manipulate one's environment</li>
+<li>think abstractly as measured by some objective criteria</li>
+</ul>
+<p>Intelligence predicts a lot of things:</p>
+<ul>
+<li>Academic success</li>
+<li>Economic success</li>
+<li>Occupational success</li>
+<li>Predicts success on standardized tests, often used as gatekeepers</li>
+<li>Effects of intelligence are <em>self-perpetuating</em> (similar to rich get richer,
+but intelligence)</li>
+</ul>
+<p>Intelligence comes from:</p>
+<ul>
+<li>Gentics
+<ul>
+<li>More similar between identical twins than fraternal twins</li>
+<li>Adopted children are more similar to biological parents</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#guest-lecture-aacc" id="guest-lecture-aacc">Guest Lecture AA&amp;CC</a></h1>
+<h1><a class="header" href="#intelligence-part-2" id="intelligence-part-2">Intelligence (Part 2)</a></h1>
+<p>Samantha is a 17-year-old girl with lower-than-average self esteem. If she is
+like most people, when she is 65, what would you expect her self-esteem level
+to be?</p>
+<ol>
+<li>Samantha's self-esteem will increase such that by the time she is 65, she
+will have average self-esteem compared to her peers.</li>
+<li>Samantha's self-esteem will decrease such that by the time she is 65, her
+self-esteem will be even further below average compared to her peeers than
+it is now.</li>
+<li>Samantha's self-esteem will stay the same between now and age 65.</li>
+<li>Samantha's self-esteem will increase between now and age 65, but at age 65
+she will have lower self-esteem than her peers.</li>
+</ol>
+<blockquote>
+<p>Samantha's self-esteem will increase between now and age 65, but at age 65
+she will have lower self-esteem than her peers.</p>
+</blockquote>
+<p>When Eric was 18, he enrolled in a pre-medicine program at university because
+his parents expect him to become a doctor. Now, at age 22, he realizes that
+he really does not with to pursue medicine, and has to spend an extra two years
+in university to get the credits for the humanities degree that he really wants.
+Eric's choice of pre-medicine at age 18 could be considered an example of what,
+according to Erikson?</p>
+<ol>
+<li>Negative identity</li>
+<li>Imaginary audience</li>
+<li>Personal fable</li>
+<li>Identity foreclosure</li>
+<li>Identity confusion</li>
+</ol>
+<blockquote>
+<p>Identity foreclosure</p>
+</blockquote>
+<p>Which of the following would you expect to be normally distributed?</p>
+<ol>
+<li>The handedness (left, right, or ambidextrous) of students in this class</li>
+<li>The birth months of students in this class</li>
+<li>The IQ scores of students in this class</li>
+<li>The diameters of the oak trees from a specific species in Morningside Park</li>
+<li>The heights of all people in the world</li>
+</ol>
+<blockquote>
+<p>The diameters of the oak trees from a specific species in Morningside Park</p>
+</blockquote>
+<p>How likely is that a child will score a 130 or higher on an IQ test?</p>
+<blockquote>
+<p>~2% change</p>
+</blockquote>
+<p>What percentile is a child in if she scores a 115?</p>
+<blockquote>
+<p>85th percentile</p>
+</blockquote>
+<p>How does the average IQ score of a 9-year-old compare to the average IQ score of
+a 6-year-old?</p>
+<blockquote>
+<p>Average IQ score will be 100, since tests are designed for that age</p>
+</blockquote>
+<p>How does the average IQ score of a 10-year-old in Canada compare to the average
+IQ score of a 10-year-old in the United States?</p>
+<blockquote>
+<p>Average will also be 100, Canada and U.S. will have different IQ tests</p>
+</blockquote>
+<h2><a class="header" href="#family-environment" id="family-environment">Family Environment</a></h2>
+<p>While genetics plays a major factor in a affecting a child's intelligence, family
+environment also plays a role.</p>
+<ul>
+<li>Education of parents, gives more resources and strategies</li>
+<li>Stressors/early childhood adversity. Spending emotional, physical resources
+spent on stressors instead of learning their environment</li>
+<li>IQ scores positively correlated with protective factors
+<ul>
+<li>High parental involvement</li>
+<li>Stimulating physical environment</li>
+</ul>
+</li>
+<li>IQ scores negatively oorrelated with risk factors
+<ul>
+<li>Low SES</li>
+<li>Low maternal education</li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#schooling" id="schooling">Schooling</a></h2>
+<p>School improves children's intelligence. However, the knowledge we learn does not
+define intelligence.</p>
+<ul>
+<li>IQ scores higher during the school year than in the summer</li>
+<li>Kids that miss academic year cutoff have lower IQ scores than slightly older
+kids that made the cutoff.</li>
+</ul>
+<h2><a class="header" href="#views-of-intelligence" id="views-of-intelligence">Views of Intelligence</a></h2>
+<p>Debunked views</p>
+<ul>
+<li>Keenness of sight</li>
+<li>Ethnicity</li>
+</ul>
+<p>Older, valid scientific views (still used)</p>
+<ul>
+<li>Reaction time</li>
+<li>Speed of association</li>
+<li>Brain volume</li>
+</ul>
+<p>Carroll's Three-Tiered Model(Factor Analysis):</p>
+<ol>
+<li>General intelligence
+Broad level of intelligence that encompasses everything below it</li>
+<li>Basic intelligence
+<ul>
+<li>Fluid intelligence
+The ability to solve novel problems</li>
+<li>Crystallized intelligence
+The things that we know (random facts, name of friends, everything we know)</li>
+<li>General memory and learning
+How well we learn new information</li>
+</ul>
+</li>
+<li>Set of specific abilities</li>
+</ol>
+<p><img src="psya02/./pictures/three-tiered-model.png" alt="TTM" /></p>
+<p>Intelligence itself is not observable, but correlates of it are</p>
+<h2><a class="header" href="#intelligence-tests" id="intelligence-tests">Intelligence Tests</a></h2>
+<p><strong>Alfred Binet</strong>
+Invented first IQ test using trial &amp; error</p>
+<ul>
+<li>Binet-Simon intelligence test (1904)
+<ul>
+<li>Puzzles</li>
+<li>Object naming</li>
+<li>Counting</li>
+</ul>
+</li>
+</ul>
+<p>Had individuals who had a certain level of occupational and educational
+achievement do a battery of tests. If they did well on something, then that test
+could be used to measure intelligence.</p>
+<p>Modern IQ tests test performance on areas from the bottom tier of Caroll's TTM</p>
+<ul>
+<li>Stanford-Binet IQ test</li>
+<li>Wechsler Intelligence Scale for Children (WISC)</li>
+<li>Wechsler Adult Intelligence Scale (WAIS)</li>
+<li>Raven Progresive Matrices (non-verbal)</li>
+</ul>
+<p>Different IQ tests for different ages</p>
+<ul>
+<li><strong>Ideational fluency</strong> for 7-year-olds:
+When you see the word PLANT, what else do you think of? Name as many words
+as you can.</li>
+<li><strong>Naming facility</strong> for 5-year-olds:
+Describing what is happening in a picture</li>
+</ul>
+<p>Created for a specific age group and location</p>
+<ul>
+<li>Mean score is designed to be 100</li>
+<li>Standard deviation is designed to be 15</li>
+<li>IQ scores follow a normal distribution</li>
+</ul>
+<p><img src="psya02/./pictures/iq-graph.png" alt="IQ-graph" /></p>
+<p>Short-term reliability of IQ tests are quite good. Long term reliability is less
+consistent. Infant IQ doesn't reliably predict child/adult IQ. Child and adult
+IQ are correlated, but correlation is lower with longer time intervals.</p>
+<h1><a class="header" href="#emotion" id="emotion">Emotion</a></h1>
+<p>Which of the following is FALSE with respect to the normal distribution?</p>
+<ol>
+<li>The normal distribution is symmetrical (the same on both sides)</li>
+<li>The normal distribution is centered around the mean</li>
+<li>All naturally-occuring variables are normally distributed</li>
+<li>On a particular normally distributed variable, approximately 16% of
+individuals' scores fall above one standard deviation above the mean.</li>
+<li>On a particular normally distributed variable, approximately 2% of
+individuals' scores fall below two standard deviations below the mean.</li>
+</ol>
+<blockquote>
+<p>All naturally-occuring variables are normally distributed</p>
+</blockquote>
+<p>James scores 85 on an IQ test designed for his age and location. In what
+percentile does James' score fall?</p>
+<ol>
+<li>85th percentile</li>
+<li>16th percentile</li>
+<li>50th percentile</li>
+<li>25th percentile</li>
+<li>2nd percentile</li>
+</ol>
+<blockquote>
+<p>16th percentile</p>
+</blockquote>
+<p>Which of the following is NOT a part of Carroll's basic intelligence stratum
+(the second level)? THere is more than one right answer: select them all!</p>
+<ol>
+<li>g</li>
+<li>fluid intelligence</li>
+<li>crystallized intelligence</li>
+<li>printed language comprehension</li>
+<li>broad visual perception </li>
+</ol>
+<blockquote>
+<p>g<br />
+printed language comprehension</p>
+</blockquote>
+<h2><a class="header" href="#views-of-intelligence-1" id="views-of-intelligence-1">Views of Intelligence</a></h2>
+<p>Gardner's Theory of Multiple Intelligences</p>
+<ul>
+<li>People have at least 7 types of intelligence necessary for functioning and
+survival</li>
+<li>Not based on writte/verbal tests</li>
+<li>Based on self-reporting and behavioural observation</li>
+</ul>
+<p><img src="psya02/./pictures/gardner-view.png" alt="gardner-view" />
+<em>Nature intelligence is a new one that was added</em><br />
+<em>The three red ones correlate to ones from Caroll's model</em></p>
+<ul>
+<li>Damage to specific brain area may impact one type of intelligence, but not
+others</li>
+<li>Areas of intelligence develop at different rates</li>
+</ul>
+<p>Flynn Effect Slope:</p>
+<ul>
+<li>IQ scores consistently rising around the world</li>
+<li>Possible cuases are increased nutrition, health, better formal education,etc.</li>
+</ul>
+<h2><a class="header" href="#emotional-intelligence" id="emotional-intelligence">Emotional Intelligence</a></h2>
+<p>The ability to reason about emotions and to use emotions to enhance reasoning.
+Emotional intelligence is not tested by traditional IQ tests.</p>
+<p>Individuals with <strong>high</strong> emotional intelligence show less brain activation when
+solving emotional problems.</p>
+<p><strong>Emotion</strong>: <em>posiive</em> or <em>negative</em> response to stimulus(internal thought or
+external environmental events)</p>
+<ul>
+<li>
+<p>Physiological: racing heart, tense muscles</p>
+</li>
+<li>
+<p>Cognitive: subjective conscious experience</p>
+</li>
+<li>
+<p>Behavioural: characteristic overt expressions, facial expressions, posture</p>
+</li>
+<li>
+<p>Defined by valence(positive or negative) and psychological arousal (severity)</p>
+</li>
+</ul>
+<p><img src="psya02/./pictures/emotion-graph.png" alt="emotion-graph" /></p>
+<p>Emotions developed as a way for us to survive(happiness to increase social
+cohesion, fear to keep out of danger, anger to overcome obstacles, etc.)</p>
+<h2><a class="header" href="#theories-of-emotion" id="theories-of-emotion">Theories of Emotion</a></h2>
+<p>Theories of emotion disagree on what cause emotion</p>
+<ul>
+<li>Preception of stimulus</li>
+<li>Physiological state</li>
+<li>Cognitive interpretation of stimulus</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=kyxv0wZL29M
+" target="_blank"><img src="http://img.youtube.com/vi/kyxv0wZL29M/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
+<p><strong>Common Sense View</strong>
+stimulus &gt; emotion &gt; arousal<br />
+see a bear &gt; causes fear &gt; causes increased heartrate</p>
+<p><strong>James-Lange Theory</strong>
+stimulus &gt; arousal &gt; emotion<br />
+see a bear &gt; causes increases heartrate &gt; causes experience of fear</p>
+<p><strong>Cannon-Bard Theory</strong>
+stimulus &gt; emotion &amp; arousal<br />
+see a bear &gt; causes increased heartrate AND experience of fear separately</p>
+<p><strong>Schachter-Singer Two-Factory Theory</strong>
+stimulus &gt; arousal &gt; cognition &gt; emotion<br />
+stimulus causes physiological state, brain interprets that state emotionally,</p>
+<h2><a class="header" href="#neuroscience-view" id="neuroscience-view">Neuroscience View</a></h2>
+<p>Related neural structures to emotion:</p>
+<ul>
+<li>Amygdala - primitive, quickly processes biologically relevant information</li>
+<li>Prefrontal cortex - advanced, slowly processes information rationally</li>
+</ul>
+<p>Friend tries to scare you, thalamus processes the sound, movement, etc. and
+sends to the amygdala and prefrontal cortex</p>
+<p>Amygdala immediately triggers survival based fear response</p>
+<p>Prefrontal cortex makes you calm down, laugh.</p>
+<h2><a class="header" href="#emotional-regulation" id="emotional-regulation">Emotional Regulation</a></h2>
+<p>Emotional regulation is a somewhat learned strategy. Adults are good at
+regulating emotions, younger children are not. There are several factors:</p>
+<ul>
+<li>Internal feeling state (how we feel)</li>
+<li>Emotion-related cognitions</li>
+<li>Emotion-related physiological processes</li>
+<li>Emotion-related behaviour</li>
+</ul>
+<p>Much is related to <strong>temperament</strong></p>
+<ul>
+<li>Levels of emotionality(positive/negative)</li>
+<li>Ability to self-regulate emotion</li>
+<li>Predominantly biologically based</li>
+</ul>
+<p>Infant strategies (begins to appear after 6 months):</p>
+<ul>
+<li><strong>Gaze aversion</strong></li>
+<li><strong>Self-soothing</strong></li>
+</ul>
+<p>Strategies:</p>
+<ul>
+<li><strong>Distraction</strong> by thinking/doing something else from experiences (more often
+negative stimuli)</li>
+<li><strong>Suppression</strong> of negative thoughts</li>
+<li><strong>Affect Labelling</strong>, naming emotional experiences</li>
+<li><strong>Re-appraisal</strong>, think of emotion-inducing stimulus in a different way</li>
+</ul>
+<h1><a class="header" href="#emotion-part-2" id="emotion-part-2">Emotion (Part 2)</a></h1>
+<p>Michelle is walking home from work late one night by herself and notices that
+her palms are sweating and her heart is racing. Feeling uncomfortable, she then
+realizes that she is probably fearful about being out alone late at night. What
+theory of emotional processing does Mishal's experience BEST exemplify?</p>
+<ol>
+<li>Two-factor</li>
+<li>Common sense</li>
+<li>Cannon-Bard</li>
+<li>James-Lange</li>
+</ol>
+<blockquote>
+<p>Two-factor</p>
+</blockquote>
+<p>Ruby is a 2-month old baby boy. A loud sound startles him, and he starts to cry.
+What emotional regulation strategy or strategies might Rudy use to cope with his
+negative emotional experience? Choose all that apply.</p>
+<ol>
+<li>He might look away from the direction that the sound came from</li>
+<li>He might suck his thumb</li>
+<li>He might tell himself that &quot;everything will be ok&quot;</li>
+<li>He is likely to do none of the things on this list</li>
+</ol>
+<blockquote>
+<p>He might look away from the direction that the sound came from</p>
+</blockquote>
+<p>Sasha has been in a bad mood since the beginning of the day, and has been
+snapping at her coworkers and having difficulty concentrating on her work. At
+lunchtime, she takes a few moments to reflect and think about why she has been
+so cranky. She realizes that she is still very sad about her cat dying two weeks
+ago. What emotional regulation strategy has Sasha been engaged in?</p>
+<ol>
+<li>Reappraisal</li>
+<li>Avoidance</li>
+<li>Affect labelling</li>
+<li>Suppression</li>
+</ol>
+<blockquote>
+<p>Affect labelling</p>
+</blockquote>
+<h2><a class="header" href="#emotional-expression" id="emotional-expression">Emotional Expression</a></h2>
+<p>Observable <strong>signs</strong> of an emotional state (not symbols, symbols have an
+arbitrary relationship with the thing that it represents). People can read your
+emotional state and figure out whether you're angry or sad, etc.</p>
+<ul>
+<li>Facial expression</li>
+<li>Tone of voice</li>
+<li>Body language</li>
+<li>Rhythm of gait (walk fast when angry, walk slow when sad)</li>
+</ul>
+<h2><a class="header" href="#charles-darwins-universality-hypothesis" id="charles-darwins-universality-hypothesis">Charles Darwin's Universality Hypothesis</a></h2>
+<p>Proposed that facial expressions are <strong>evolved</strong> and therefore <strong>universal</strong> in
+the human population.</p>
+<p>He believed facial gestures evolved in order to aid in survival.</p>
+<p><img src="psya02/./pictures/faces.png" alt="faces" /></p>
+<h3><a class="header" href="#support-for-universality-hypothesis" id="support-for-universality-hypothesis">Support for Universality Hypothesis</a></h3>
+<ul>
+<li>People with visual impairments, have never seen a smiling face, also smile</li>
+<li>2-day old infants produce disgusted faces similar to adults</li>
+<li>Isolated cultures evaluate Westerners' facial expressions the same way that
+other Westerners do</li>
+</ul>
+<h3><a class="header" href="#criticisms-for-universality-hypothesis" id="criticisms-for-universality-hypothesis">Criticisms for Universality Hypothesis</a></h3>
+<p>Relationships between different emotions are different across cultures</p>
+<ul>
+<li>North American culture, think of happiness and joy, sadness and despair as
+opposite emotions</li>
+<li>In other cultures, happiness and sadness may be more closely related to each
+other</li>
+</ul>
+<p>There are cultures where smiling may mean something different (Thailand)</p>
+<h2><a class="header" href="#facial-feedback-hypothesis" id="facial-feedback-hypothesis">Facial Feedback Hypothesis</a></h2>
+<p>Based on common sense, most people agree that emotional state comes first
+before facial expressions.</p>
+<p>Hypothesis argues that facial expressions can cause/change an individual's
+emotional experience. Does not argue that it causes all changes in emotional
+state, but there can be a feedback loop.</p>
+<p><img src="psya02/./pictures/pen-test.png" alt="pen-test" /></p>
+<p>By holding pen between their teeth, it forces them to smile and puts them in a
+more positive emotional state.</p>
+<h2><a class="header" href="#deceptive-expression" id="deceptive-expression">Deceptive Expression</a></h2>
+<p>There are many reasons we may want to hide our emotions</p>
+<p><strong>Intensification</strong><br />
+Making an expression seem more intensified than how you're actually feeling</p>
+<ol>
+<li>You get socks for Christmas, but it's not the most exciting gift</li>
+<li>You feel somewhat grateful, but not too excited</li>
+<li>You intensify your feeling of gratefulness</li>
+</ol>
+<p><strong>De-intensification</strong><br />
+Downplay an emotional state</p>
+<ol>
+<li>You're on a date with someone you're very excited about</li>
+<li>You don't want them to think you're &quot;totally nuts&quot;</li>
+<li>Pull back. You de-intensify your excitedness</li>
+</ol>
+<p><strong>Masking</strong><br />
+Changing an emotional expression into another</p>
+<ol>
+<li>You're really disappointed, when someone buys you a shirt with a bad color</li>
+<li>Mask that disappointment, change it to gratitude</li>
+</ol>
+<p><strong>Neutralizing</strong><br />
+Turning off an emotional expression</p>
+<ol>
+<li>Your dog dies</li>
+<li>You're at work, and want to stay professional</li>
+<li>You turn off the feeling of sadness</li>
+</ol>
+<h2><a class="header" href="#detecting-a-fake-expression" id="detecting-a-fake-expression">Detecting a Fake Expression</a></h2>
+<p>As well, we can determine whether facial expressions are real or not</p>
+<p><strong>Morphology</strong></p>
+<ul>
+<li>Certain facial muscles are resistant to conscious change (reliable muscles)</li>
+<li>Its much harder to control your eyes than it is to control your mouth. You can
+tell whether an expression is real is through these reliable muscles.</li>
+</ul>
+<p><strong>Symmetry</strong></p>
+<ul>
+<li>In genuine expressions, we see smmetrical facial gestures</li>
+<li>Uneven/unbalanced facial gestures are more likely to be insecure.</li>
+</ul>
+<p><strong>Duration</strong></p>
+<ul>
+<li>Sincere expressions last between 0.5s and 5s</li>
+<li>A short facial expression is a queue that the expression is insecure.</li>
+</ul>
+<p><strong>Temporal Patterning</strong></p>
+<ul>
+<li>Microexpressions appear first and are sincere</li>
+<li>You see things like the eyes changing, before the smile starts to appear.
+Sincere gestures appear and disappear gradually rather than suddenly.</li>
+</ul>
+<h2><a class="header" href="#motivation" id="motivation">Motivation</a></h2>
+<p>Psychological reason for producing an action, primarily driven by emotion.</p>
+<p>Emotion changes actions by giving us information about an object, event, or
+individual. Also provides instructions on what to do with new information.</p>
+<p><strong>Hedonic principle</strong>: All motivation extends from attraction to pleasure and
+avoidance of paint. Our primary motivator, for <strong>everything</strong> is pleasure. We
+do unpleasant activities to achieve this pleasure goal.</p>
+<h1><a class="header" href="#social-psychology" id="social-psychology">Social Psychology</a></h1>
+<h1><a class="header" href="#social-psychology-part-2" id="social-psychology-part-2">Social Psychology (Part 2)</a></h1>
+<h1><a class="header" href="#social-psychology-part-3" id="social-psychology-part-3">Social Psychology (Part 3)</a></h1>
+<h1><a class="header" href="#health-psychology" id="health-psychology">Health Psychology</a></h1>
+<h1><a class="header" href="#health-psychology-part-2" id="health-psychology-part-2">Health Psychology (Part 2)</a></h1>
+<h1><a class="header" href="#clinical-psychology" id="clinical-psychology">Clinical Psychology</a></h1>
+<h1><a class="header" href="#clinical-psychology-part-2" id="clinical-psychology-part-2">Clinical Psychology (Part 2)</a></h1>
+<h1><a class="header" href="#clinical-psychology-part-3" id="clinical-psychology-part-3">Clinical Psychology (Part 3)</a></h1>
+<h1><a class="header" href="#therapies" id="therapies">Therapies</a></h1>
+<h1><a class="header" href="#therapies-part-2" id="therapies-part-2">Therapies (Part 2)</a></h1>
+<h1><a class="header" href="#therapies-part-3" id="therapies-part-3">Therapies (Part 3)</a></h1>
+<h1><a class="header" href="#cscc69-operating-systems" id="cscc69-operating-systems">CSCC69 Operating Systems</a></h1>
+<p>University of Toronto Scarborough<br />
+Operating Systems<br />
+Winter 2020</p>
+<p><strong>Instructor</strong>: Sina Meraji<br />
+<strong>Email</strong>: sina.mrj@gmail.com<br />
+<strong>Office hours</strong>: Thursday 4-5pm (by appointment)</p>
+<h2><a class="header" href="#course-description" id="course-description">Course Description</a></h2>
+<p>CSCC69H covers the main topics of operating systems with a focus on system programming in C. The course is
+structured around four programming assignments with theory covered in midterm and final exams. By the end of
+the course, you will have experience working with a large, existing C codebase; will understand the importance
+and difficulty of parallel programming; and will have a working understanding of system calls, processes,
+memory management, and the file system.</p>
+<h2><a class="header" href="#course-objectives" id="course-objectives">Course Objectives</a></h2>
+<p>To understand</p>
+<ul>
+<li>The role of the OS</li>
+<li>Its major components</li>
+<li>The design principles and implementations</li>
+<li>Working on real Operating System assignments</li>
+</ul>
+<h2><a class="header" href="#workload" id="workload">Workload</a></h2>
+<ol>
+<li>Assignments - 40%
+<ul>
+<li>Code reading component
+<ul>
+<li>Questions about the code we give you</li>
+<li>Reinforce lecture concepts, familiarize you with the code <strong>before</strong> you start writing</li>
+</ul>
+</li>
+<li>Programming component
+<ul>
+<li>Language for this course is C</li>
+<li>Correctness and performance considerations</li>
+</ul>
+</li>
+<li>Design document component
+<ul>
+<li><strong>Think</strong> about what you need to build <strong>first</strong></li>
+<li>Tell us in plain English what you were thinking</li>
+<li>Tell us how to find your code</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Midterm(2) - 20%
+<ul>
+<li>Thursday, in class time</li>
+<li>10% each</li>
+<li>Question about assignments and course material</li>
+</ul>
+</li>
+<li>Final - 40%
+<ul>
+<li>Cumulative</li>
+<li>Question about assignments</li>
+<li>Lots of final exams from CSCC69 are available for study</li>
+<li><strong>You have to get more than 40/100 to pass the course</strong></li>
+</ul>
+</li>
+</ol>
+<h1><a class="header" href="#introduction-to-operating-systems" id="introduction-to-operating-systems">Introduction to Operating Systems</a></h1>
+<p>The operating system is a software layer between user applications and hardware</p>
+<ul>
+<li>Turns ugly hardware into abstractions (provides services)</li>
+<li>Serves as a resource manager</li>
+<li>Serves as a control program (protection)</li>
+</ul>
+<p>Will focus on three core abstractions and resource management services:</p>
+<ul>
+<li>Processes and Threads</li>
+<li>Memory management</li>
+<li>File &amp; I/O systems</li>
+</ul>
+<p><img src="cscc69/./pictures/os.png" alt="os" /></p>
+<h2><a class="header" href="#storage-hierarchy" id="storage-hierarchy">Storage Hierarchy</a></h2>
+<ul>
+<li>Processor registers, main memory, HDD/SDD, cloud services</li>
+<li>Registers are fast and close to the CPU, but small in size and expensive to have lots of</li>
+<li>Cloud services are a lot slower and far from CPU, but larger in size and cheaper</li>
+<li>Caches installed to hide performance differences, in large access-time gaps between two levels
+<ul>
+<li>DRAM store programs and data during program execution, but is volatile</li>
+<li>We copy to cache memory close to the processor</li>
+<li>But cache is limited, and cache management is necessary (coherency)</li>
+</ul>
+</li>
+</ul>
+<p><img src="cscc69/./pictures/storage.png" alt="storage" /></p>
+<h2><a class="header" href="#concurrency" id="concurrency">Concurrency</a></h2>
+<p>Modern computers are multiprocessors, where CPU and device controllers execute
+concurrently and compete for memory cycles.</p>
+<ul>
+<li><strong>Memory controller</strong> synchronizes access to shared memory</li>
+<li><strong>Hardware Interrupts</strong> used to signal the CPU of some event (disk I/O
+complete, network packet arrived, etc.)</li>
+<li><strong>Traps/Exceptions</strong> signal errors (division by zero) or requests OS
+service (system call)
+Operating systems are event-driven programs</li>
+</ul>
+<h2><a class="header" href="#processes" id="processes">Processes</a></h2>
+<p>Processes is a program in execution, and contains all states of the program</p>
+<ul>
+<li>An address space</li>
+<li>Set of OS resources</li>
+<li>Set of general-purpose registers with current values</li>
+<li>Named by process ID (PID)</li>
+</ul>
+<p><strong>Independent</strong> processes cannot affect or be affected by other processes
+executing in the system (no data sharing)<br />
+<strong>Cooperating</strong> processes are not independent. Must communicate with each other
+and synchronize their actions.</p>
+<ul>
+<li>Shared memory (fork())</li>
+<li>Message passing
+<ul>
+<li>send(P, msg) - send msg to process P</li>
+<li>receive(Q, msg) - receive msg from process Q</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#process-data-structures" id="process-data-structures">Process Data Structures</a></h3>
+<p>Processes are represented by the OS using a data structure called the Process
+Control Block (PCB), which contains all the info about a process when it isnt
+running</p>
+<ul>
+<li>Process state (ready, running, blocked)</li>
+<li>Program counter - address of the next instruction</li>
+<li>CPU Registers - must be saved at an interrupt</li>
+<li>CPU scheduling info - priority in the queue</li>
+<li>Page tables - memory management info</li>
+<li>I/O status info - list of open files
+Processes must share the CPU, and the PCB is everything needed to restore a
+process to its hardware configuration when the process was switched out of hardware</li>
+</ul>
+<p><strong>Linux PCB</strong> - defined in /include/linux/sched.h
+<img src="cscc69/./pictures/task-struct.png" alt="task_struct" /></p>
+<h3><a class="header" href="#state-queues" id="state-queues">State Queues</a></h3>
+<p>The OS maintains a collection of queues which represent the state of all
+processes in the system (typically one for each state)</p>
+<ol>
+<li>OS dynamically allocates for a PCB and initializes a process, and places it
+in a ready queue</li>
+<li>When changing state, PCB is unlinked from one queue and linked into another</li>
+<li>Each PCB is requeued according to its state - ready, waiting, etc.</li>
+<li>PCB is deallocated when the process terminates</li>
+</ol>
+<h3><a class="header" href="#context-switch" id="context-switch">Context Switch</a></h3>
+<p>Switches the CPU to another process, saving the state of the old process and
+loading the saved state of the next process in the ready queue.</p>
+<p>Context switching is overhead, and a performance bottleneck, so threads are
+used to avoid it</p>
+<p>Processes are created using the fork() command</p>
+<ul>
+<li>Creates a new address space, with a <strong>copy</strong> of the entire contents of
+the address space of the parent</li>
+<li>Initializes kernel resources to point to the resources used by parent</li>
+<li>Resturns twice, child's pid to the parent and &quot;0&quot; to the child which we can use
+control flow of each process</li>
+</ul>
+<h3><a class="header" href="#forking-web-server" id="forking-web-server">Forking Web Server</a></h3>
+<pre><code class="language-c">while (1) {
+	int sock = accept();
+	if ((child_pid = fork()) == 0)
+		# Handle client request
+	} else {
+		# Close socket
+	}
+}
+</code></pre>
+<p><img src="cscc69/./pictures/process-server.png" alt="process-server" /></p>
+<p>This concurrent web server forks a new process to handle every call.
+However, they all share:</p>
+<ul>
+<li>Code and data (address space)</li>
+<li>Privileges</li>
+<li>Resources (files, sockets, etc.)</li>
+</ul>
+<p>The processes do not share:</p>
+<ul>
+<li>program counter</li>
+<li>stack pointer</li>
+<li>registers</li>
+</ul>
+<p><img src="cscc69/./pictures/thread.png" alt="thread" /></p>
+<h2><a class="header" href="#threads" id="threads">Threads</a></h2>
+<p>Separate the two into the concepts of <em>processes</em> and <em>threads</em></p>
+<ul>
+<li><strong>Thread</strong> defines a sequential execution stream within a process</li>
+<li><strong>Process</strong> defines the address space and general process attributes (everything but threads of execution)
+Threads are bound to a process, processes are containers for at least one thread</li>
+</ul>
+<h3><a class="header" href="#concurrent-thread-server" id="concurrent-thread-server">Concurrent Thread Server</a></h3>
+<pre><code class="language-c">web_server() {
+	while (1) {
+		int sock = accept()
+		thread_fork(handle_request, sock);
+	}
+}
+handle_request(int sock) {
+	# Process request
+	close(sock);
+}
+</code></pre>
+<p><img src="cscc69/./pictures/pthread.png" alt="pthread" /></p>
+<p>Thread scheduler determines when a thread runs using queues. Unlike OS and processes, it is implemented
+at user-level in a library.</p>
+<ul>
+<li>Run queue - Threads currently running (usually one)</li>
+<li>Ready queue - Threads ready to run</li>
+</ul>
+<h1><a class="header" href="#bootstrapping" id="bootstrapping">Bootstrapping</a></h1>
+<p>A small program, BIOS (Basic Input Output System) is stored in non-volatile
+memory in hardware. The BIOS knows how to access simple hardware devices i.e.
+disk, keyboard, display.</p>
+<p>When starting up, this program:</p>
+<ol>
+<li>Checks RAM, keyboard, basic devices are installed and funtioning correctly</li>
+<li>Scans buses to detect attached devices and configure new ones</li>
+<li>Determine boot device (goes down the boot order list or user selects)</li>
+<li>Read first sectore from boot device and executes it (bootloader)</li>
+<li>Bootloader reads partition table, finds active partition, reads second
+bootloader</li>
+<li>Secondary bootloader reads OS into memory and executes it</li>
+</ol>
+<h2><a class="header" href="#os-startup" id="os-startup">OS Startup</a></h2>
+<p>Machine starts in system mode so kernel code can execute immediately</p>
+<ol>
+<li>Initialize internal data structures</li>
+<li>Create first process</li>
+<li>Switch mode to user and start running first process</li>
+<li>Wait for something to happen (OS entirely driven by external events)</li>
+</ol>
+<h2><a class="header" href="#process-creation" id="process-creation">Process Creation</a></h2>
+<p><img src="cscc69/./pictures/process-creation.png" alt="process-creation" /></p>
+<ol>
+<li>Compile program code into object file with ASM instructions</li>
+<li>Link file with shared/not shared libraries</li>
+<li>Get an executable</li>
+</ol>
+<pre><code class="language-c">while (1) {
+	char *cmd = read_command();
+	int child_pid = fork();
+	if (child_pid == 0) {
+		exec(cmd); //cmd=executable name(reboot)
+	} else {
+		wait(child_pid);
+	}
+}
+</code></pre>
+<p>exec() does the following:</p>
+<ol>
+<li>Stops current process</li>
+<li>Loads program into process' address space</li>
+<li>Initializes hardware context and args for new program</li>
+<li>Places PCB onto the ready queue
+<em>does not create a new process</em></li>
+</ol>
+<h1><a class="header" href="#system-calls" id="system-calls">System Calls</a></h1>
+<p>OS and user programs are isolated from each other. OS provides an API of system
+calls that user programs can evoke.</p>
+<p>User to Kernel mode</p>
+<ul>
+<li>Boot time (not really, runs in kernel mode already)</li>
+<li>Explicit system call - request for service by application</li>
+<li>Hardware interrupt</li>
+<li>Software trap/exception</li>
+<li>Hardware has table of interrupt service routines</li>
+</ul>
+<p>Kernel to User</p>
+<ul>
+<li>Jump back to next application instruction</li>
+</ul>
+<table><thead><tr><th>Process Management Syscall</th><th>Description</th></tr></thead><tbody>
+<tr><td>pid=fork()</td><td>Create child process identical to parent</td></tr>
+<tr><td>pid=waitpid(pid,&amp;statloc,options)</td><td>Wait for child to terminate</td></tr>
+<tr><td>s=execve(name,argv,environp)</td><td>Replace process' core image</td></tr>
+<tr><td>exit(status)</td><td>Terminate process execution, return status</td></tr>
+</tbody></table>
+<table><thead><tr><th>File Management Syscalls</th><th>Description</th></tr></thead><tbody>
+<tr><td>fd=open(file,how,...)</td><td>Open file for reading, writing, or both</td></tr>
+<tr><td>s=close(fd)</td><td>Close open file</td></tr>
+<tr><td>n=read(fd,buffer,nbytes)</td><td>Read data from file into buffer</td></tr>
+<tr><td>n=write(fd,buffer,nbytes)</td><td>Write data from buffer into file</td></tr>
+<tr><td>position=lseek(fd,offset,whence)</td><td>Move file pointer</td></tr>
+<tr><td>s=stat(name,&amp;buf)</td><td>Get file's status information</td></tr>
+</tbody></table>
+<h2><a class="header" href="#tracing-read-syscall" id="tracing-read-syscall">Tracing Read Syscall</a></h2>
+<p><img src="cscc69/./pictures/read-syscall.png" alt="read-syscall" /></p>
+<ol>
+<li>User program calls C lib function with arguments</li>
+<li>C lib function arranges to pass args to OS, including syscall identifier</li>
+<li>Execute special instruction to trap to system mode</li>
+<li>Syscall handler figures out which syscall is needed and calls routine for
+that operation</li>
+</ol>
+<p>Adds extra level of indirection through syscall handler, rather than direct
+control flow to called function. Enforce separation of userspace and kernel</p>
+<p>Kernel must verify arguments passed to it. For example, sys_write():</p>
+<ul>
+<li>must check whether fd is a file descriptor of recently opened file</li>
+<li>must check if allowed to write to it</li>
+</ul>
+<p>Fixed number of arguments can be passed to registers. Kernel must copy data from
+user space to its own buffers. Result of a syscall is returned in register.</p>
+<h1><a class="header" href="#synchronization" id="synchronization">Synchronization</a></h1>
+<p>Processes might want to communite with each other to do certain tasks. A
+process is:</p>
+<ul>
+<li><strong>independent</strong> if it cannot affect/be affected by other processes executing in the system. No data sharing</li>
+<li><strong>cooperating</strong> if not independent. Needs data sharing</li>
+</ul>
+<p>Cooperating processes can exchange information using either</p>
+<ul>
+<li>Shared memory (e.g. fork())</li>
+<li>Message passing - Send(P,msg) and Receive(Q,msg)</li>
+</ul>
+<p>High-level Abstractions of the critical section:</p>
+<ul>
+<li><strong>Locks</strong> - Very primitive, minimal semantics</li>
+<li><strong>Semaphores</strong> - Basic, easy to understand, hard to program with</li>
+<li><strong>Monitors</strong> - High-level, ideally language support (Java)</li>
+<li><strong>Messages</strong> - Model for communication and sync. Direct application to
+distributed systems.</li>
+</ul>
+<h2><a class="header" href="#banking-example" id="banking-example">Banking Example</a></h2>
+<p>Suppose we write a function to handle withdrawals and deposits to a bank account.
+A bank's central server would create separate threads for each action.</p>
+<pre><code class="language-c">int balance = 1000;
+
+int withdraw(acct, amt) {
+	balance = get_balance(acct);
+	balance = balance - amt;
+	put_balance(acct, balance);
+	return balance;
+}
+
+int deposit(acct, amt) {
+	balance = get_balance(acct);
+	balance = balance + amt;
+	put_balance(acct, balance);
+	return balance;
+}
+</code></pre>
+<p>Suppose you withdraw $100 and S.O. deposits $100. What is the account balance?
+The problem is, processes can be interleaved, due to context switching.</p>
+<pre><code class="language-c">// Withdrawing code
+balance = get_balance(acct);
+balance = balance - amt;
+
+// Context switch, deposit code starts executing
+balance = get_balance(acct);
+balance = balance + amt;
+put_balance(acct, balance);
+
+// Withdrawing code continues
+put_balance(acct, balance);
+</code></pre>
+<p>The problem is that concurrent threads manipulated a shared resource without
+synchronization. This causes a <strong>race condition</strong>, where outcome depends on the
+order in which accesses take place.</p>
+<h2><a class="header" href="#critical-section" id="critical-section">Critical Section</a></h2>
+<p>We identify a section of the code where shared resources are accessed, called the
+<strong>critical section</strong>.</p>
+<pre><code class="language-c">int balance = 1000;
+
+int withdraw(acct, amt) {
+	// Enter critical section
+	balance = get_balance(acct);
+	balance = balance - amt;
+	put_balance(acct, balance);
+	// Exit critical section
+	return balance;
+}
+
+int deposit(acct, amt) {
+	// Enter critical section
+	balance = get_balance(acct);
+	balance = balance + amt;
+	put_balance(acct, balance);
+	// Exit critical section
+	return balance;
+}
+</code></pre>
+<p>This piece of code needs to be synchronized so that only one thread can enter
+its critical section at a time. Other processes running concurrently must wait.</p>
+<p>For program data:</p>
+<ul>
+<li>Local variables are not shared - <em>private</em>
+<ul>
+<li>Each thread has its own stack</li>
+<li>Local variables allocated on this private stack</li>
+</ul>
+</li>
+<li>Global variables and static objects - <em>shared</em>
+<ul>
+<li>Stored in static data segment, accessible by any thread</li>
+</ul>
+</li>
+<li>Dynamic objects and other heap objects - <em>shared</em>
+<ul>
+<li>Allocated from heap with malloc/free or new/delete</li>
+</ul>
+</li>
+</ul>
+<p>We want to design a protocol that satisfies the following properties:</p>
+<ol>
+<li><strong>Mutual Exclusion</strong> - If a thread is in CS, no other thread is</li>
+<li><strong>Progress</strong> - If no thread in CS and a thread wants to enter CS, it should
+be able to enter in definite time.</li>
+<li><strong>Bounded waiting</strong> - If some thread wait on CS, there should be a limit on
+the number of times other threads can enter CS before this thread is granted
+access. (no starvation)</li>
+<li><strong>Performance</strong> - Overhead of enter/exit is small with respect to work being
+done within it</li>
+</ol>
+<h2><a class="header" href="#producer-and-consumer-problem" id="producer-and-consumer-problem">Producer and Consumer Problem</a></h2>
+<p>Processes share a bounded buffer. The producer puts info into the buffer, and
+consumers take info out.</p>
+<p>Producer sleeps when buffer is full, and wakes up consumer when producing an item</p>
+<p>Consumer sleeps when buffer is empty, and wakes up producer when consuming an
+item</p>
+<pre><code class="language-c">#define N 100
+int count = 0;
+
+void producer(void) {
+	int item;
+	while (TRUE) {
+		item = produce_item();
+		if (count == N) sleep();
+		insert_item(item);
+		count += 1;
+		if (count == 1) wakeup(consumer);
+	}
+}
+
+void consumer(void) { 
+	int item; 
+	while (TRUE) {
+		if (count == 0) sleep();
+		item = remove_item();
+		count -= 1;
+		if (count == N-1) wakeup(producer);
+		consume_item(item);
+	}
+}
+</code></pre>
+<h2><a class="header" href="#readerswriters-problem" id="readerswriters-problem">Readers/Writers Problem</a></h2>
+<p>An object is shared among several threads. Some threads only read the object,
+while other threads only write to it.</p>
+<p>We want to allow multiple concurrent <strong>readers</strong>, but only one <strong>writer</strong></p>
+<p><img src="cscc69/./pictures/readers-writer.png" alt="readers-writer" /></p>
+<h2><a class="header" href="#dining-philosophers" id="dining-philosophers">Dining Philosophers</a></h2>
+<p>In this problem, there are N philosophers sitting around a table. There is N
+bowls of spaghetti and N forks. However, each philosopher needs two forks to eat.
+Philosophers can indicate to others that they want to eat by entering the HUNGRY
+state. When they are eating, they are in the EATING state. When not eating and
+not hungry, the philosopher is THINKING.</p>
+<p><img src="cscc69/./pictures/dining-philosophers.png" alt="dining-philosophers" /></p>
+<h1><a class="header" href="#petersons-solution" id="petersons-solution">Peterson's Solution</a></h1>
+<p>Assumptions:</p>
+<ul>
+<li>No special hardware instructions, no restriction on # of processors</li>
+<li>Basic machine language instructions (LOAD STORE, etc.) are atomic</li>
+</ul>
+<h2><a class="header" href="#first-attempt" id="first-attempt">First Attempt</a></h2>
+<p>Share an int variable <em>turn</em>(0 or 1). If turn=i, thread i is allowed into its CS</p>
+<pre><code class="language-c">stuff(id_t id) {
+	...
+	while (turn != id); /* entry section */
+	/* critical section, access protected resource */
+	turn = 1-id; /* exit section */
+	...
+}
+</code></pre>
+<p>This achieves mutual exclusion, but not progress.</p>
+<ol>
+<li>thread 1 enters, sets turn to 0</li>
+<li>thread 1 wants to enter again, but thread 0 doesnt</li>
+<li>thread 1 cannot enter</li>
+</ol>
+<h2><a class="header" href="#second-attempt" id="second-attempt">Second Attempt</a></h2>
+<p>Have a shared flag for each thread</p>
+<pre><code class="language-c">boolean flag[2] = {false, false}
+</code></pre>
+<p>Each thread updates its own flag, and reads other thread's flag. If flag[i] is
+true, thread i is ready to enter its CS.</p>
+<pre><code class="language-c">stuff(id_t id) {
+	...
+	while (flag[1-id]); /* entry section */
+	flag[id] = true; /* indicate entering CS */
+	/* critical section, access protected resource */
+	flag[id] = false; /* exit section */
+	...
+}
+</code></pre>
+<p>However, if both flags reach the while loop at the same time (context switch),
+they both set flag to true and enter critical section.</p>
+<h2><a class="header" href="#third-attempt-petersons-solution" id="third-attempt-petersons-solution">Third Attempt (Peterson's Solution)</a></h2>
+<p>Peterson's solution combines both the first and second attempts.</p>
+<pre><code class="language-c">#define FALSE 0
+#define TRUE 1
+#define N 2 // number of processes
+
+int turn; // whose turn is it
+int interested[N]; // all values initially 0
+
+void enter_region(int process) {
+	int other; // number of other process
+
+	other = 1-process; // the opposite of process
+	interested[process] = TRUE; // show that you're interested
+	turn=process; // set flag
+	while (turn == process &amp;&amp; interested[other] == TRUE); // null statement
+}
+
+void leave_region(int process) {
+	interested[process] = FALSE; // indicate exit CS
+} 
+</code></pre>
+<h1><a class="header" href="#locks" id="locks">Locks</a></h1>
+<h2><a class="header" href="#test-and-set-lock-tsl---atomic-instruction" id="test-and-set-lock-tsl---atomic-instruction">Test-and-Set Lock (TSL) - Atomic Instruction</a></h2>
+<p>On single-core processors:</p>
+<ul>
+<li>Disable interrupts before entering critical section</li>
+<li>Prevents context switches</li>
+</ul>
+<p>Uses a lock variable:</p>
+<ul>
+<li>Lock == 0 - nobody is using the lock</li>
+<li>Lock == 1 - lock is in use</li>
+<li>Must change lock's value when acquiring lock</li>
+</ul>
+<pre><code class="language-c">/* EXECUTES ATOMICALLY */
+boolean test_and_set(boolean *lock) {
+	boolean old = *lock; // record old value
+	*lock = True; // set to some non-zero value
+	return old; // return old value
+}
+</code></pre>
+<p><em>lock</em> is always true on exit</p>
+<ol>
+<li>return true - locked already, nothing changed</li>
+<li>return false - lock was available and is acquired</li>
+</ol>
+<h2><a class="header" href="#spinlock" id="spinlock">Spinlock</a></h2>
+<p>Does busy waiting - thread continuously executes while loop in acquire()</p>
+<pre><code class="language-c">boolean lock;
+
+void acquire(boolean *lock) {
+	while(test_and_set(lock));
+}
+
+void release(boolean *lock) {
+	*lock = false;
+}
+</code></pre>
+<p>Using spinlocks, we can rewrite the banking example:</p>
+<pre><code class="language-c">int withdraw(acct, amt) {
+	acquire(lock);
+	...
+	release(lock);
+	return balance;
+}
+
+int deposit(acct, amt) {
+	acquire(lock);
+	...
+	release(lock);
+	return balance;
+}
+</code></pre>
+<p>When using spinlocks, we need to release the lock when we are done with it.
+Otherwise, other threads can't run and we cause deadlock.</p>
+<h1><a class="header" href="#semaphores" id="semaphores">Semaphores</a></h1>
+<p>Abstract data types that provide synchronization</p>
+<ul>
+<li>An integer variable, accessed only through 2 atomic operations
+<ul>
+<li><strong>wait</strong> (also P or decrement) - decrement the variable and block until
+semaphore is free</li>
+<li><strong>signal</strong> (also V or increment) - increment the variable, unblock a waiting thread * A queue of waiting threads</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-c">wait(semaphore *s) {
+	while (s-&gt;count == 0);
+	s-&gt;count -=1;
+}
+
+signal(semaphore *s) {
+	s-&gt;count += 1;
+	... //unblock one waiter
+}
+</code></pre>
+<p>Have to ensure that two threads cannot execute <em>wait</em> and *signal at the same
+time</p>
+<p>There are two types of semaphores:</p>
+<ol>
+<li>Mutex (binary) semaphore
+<ul>
+<li>single access to a resource</li>
+<li>guarantees mutual exclusion to a critical section</li>
+<li>used for single process access to a single core CPU</li>
+</ul>
+</li>
+<li>Counting semaphore
+<ul>
+<li>resource with many units, allows certain kinds of unsynchronized concurrent
+access (e.g., reading)</li>
+<li>multiple threads can pass the semaphore</li>
+<li>max number of threads determined by semaphore's intial count value</li>
+</ul>
+</li>
+</ol>
+<h2><a class="header" href="#semaphores-banking-problem" id="semaphores-banking-problem">Semaphores Banking Problem</a></h2>
+<pre><code class="language-c">typedef struct account {
+	double balance;
+	semaphore S;
+} account_t;
+
+int withdraw(account_t *acct, amt) {
+	double bal;
+	wait(acct-&gt;S);
+	bal = acct-&gt;balance;
+	bal = bal - amt;
+	acct-&gt;balance = bal;
+	signal(acct-&gt;S);
+	return bal;
+}
+</code></pre>
+<h2><a class="header" href="#semaphores-readerswriters-problem" id="semaphores-readerswriters-problem">Semaphores Readers/Writers Problem</a></h2>
+<p>Use a semaphore. Think of it as a token held by either a group of readers or one
+individual writer. Use three variables:</p>
+<ul>
+<li>Semaphore w_or_r - exclusive writing or reading</li>
+<li>Semaphore mutex - control access to readcount</li>
+<li>int readcount - number of threads reading object</li>
+</ul>
+<p>Note that <em>readcount</em> is itself a shared resource and needs a mutex to sync</p>
+<p>Its useful to think of reader as entering/leaving a classroom. First one has to
+turn on the lights, and last to leave has to turn off the lights.</p>
+<pre><code class="language-c">int readcount = 0;
+Semaphore mutex = 1;
+Semaphore w_or_r = 1;
+
+Writer {
+	wait(w_or_r);
+	Write;
+	signal(w_or_r);
+}
+
+Reader {
+	wait(mutex); // lock readcount
+	readcount += 1;
+
+	// is this the first reader?
+	if (readcount == 1)
+		wait(w_or_r); // synch w/ writers
+
+	// unlock readcount
+	signal(mutex);
+	Read;
+
+	wait(mutex); // lock readcount
+	readcount -= 1;
+
+	// last reader needs to signal
+	if (readcount == 0)
+		signal(w_or_r);
+	signal(mutex);
+}
+</code></pre>
+<h2><a class="header" href="#semaphores-dining-philosophers-problem" id="semaphores-dining-philosophers-problem">Semaphores Dining Philosophers Problem</a></h2>
+<p>When a philosopher tries to take forks, they record that they're hungry,
+and tries to take both forks. If they can't, they block.</p>
+<p>It is only when the philosopher next to them has finished eating, that they
+wake their neighbours to test again if they're hungry.</p>
+<p>An alternate solution is: when a philosopher is hungry, to continuously check
+their left and right forks in a cycle.</p>
+<pre><code class="language-c">#define N 5
+#define LEFT (i+N-1)%N
+#define RIGHT (i+1)%N
+#define THINKING 0
+#define HUNGRY 1
+#define EATING 2
+typedef int semaphore;
+int state[N];
+semahore mutex = 1; // mutual exclusion to critical sections
+semaphore s[N]; // one semaphore per philosopher
+
+void philosopher(int i) {
+	while (TRUE) {
+		think();
+		take_forks(i); // acquire two forks or block
+		eat();
+		put_forks(i); // put both forks back on the table
+	}
+}
+
+void take_forks(int i) {
+	down(&amp;mutex); // enter critical section
+	state[i] = HUNGRY;
+	test(i); // try to acquire 2 forks
+	up(&amp;mutex); // exit critical section
+	down(&amp;s[i]); // block if forks not acquired
+}
+
+void put_forks(int i) {
+	down(&amp;mutex);
+	state[i] = THINKING; // finished eating
+	test(LEFT); // see if left neighbour can now eat
+	test(RIGHT); // see if right neighbour can now eat
+	up(&amp;mutex);
+}
+
+void test(i) {
+	if (state[i] == HUNGRY &amp;&amp; state[LEFT] != EATING &amp;&amp; state[RIGHT] != EATING) {
+		state[i] = EATING;
+		up(&amp;s[i]);
+	}
+}
+</code></pre>
+<h1><a class="header" href="#monitors" id="monitors">Monitors</a></h1>
+<p>Similar to an <em>abstract data type</em> (data and operations on the data), except only
+one process can be active within the monitor at a time</p>
+<ul>
+<li>local data accessed by monitor's procedures (not by external procedure)</li>
+<li>process <em>enters</em> monitor by invoking one of its procedures</li>
+<li>other processes attempting to enter monitor are blocked</li>
+</ul>
+<p>A process in the monitor may need to wait for something to happen:</p>
+<ul>
+<li>need to allow other process to use the monitor</li>
+<li>provide special variable type called a <em>condition</em></li>
+<li>operations on <em>condition</em> variable are:
+<ul>
+<li><strong>wait</strong> (suspend the invoking process)</li>
+<li><strong>signal</strong> (resume exactly one suspended process)<br />
+if no process is suspended, signal has no effect</li>
+</ul>
+</li>
+</ul>
+<p>The benefits of a monitor over semaphores is that locks and conditions are
+encapsulated inside a data structure. In java, the <strong>synchronized</strong> keyword
+means the lock and unlocking is done for you and guarantees mutual exclusion.</p>
+<p><img src="cscc69/./pictures/monitor.png" alt="monitor" /></p>
+<h2><a class="header" href="#monitor-semantics-for-signal" id="monitor-semantics-for-signal">Monitor Semantics for Signal</a></h2>
+<ul>
+<li>Hoare monitors
+<ul>
+<li>signal() immediately switches from the caller to a waiting thread</li>
+<li>need another queue for signaler, if signaler was not done using the
+monitor</li>
+</ul>
+</li>
+<li>Brinch Hansen
+<ul>
+<li>signaler must exit monitor immediately. signal() always last statement
+in the monitor procedure</li>
+</ul>
+</li>
+<li>Mesa monitors
+<ul>
+<li>signal() places a waiter on ready queue, but signaler continues inside
+monitor</li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#monitor-banking-example" id="monitor-banking-example">Monitor Banking Example</a></h2>
+<p>Threads must acquire the monitor's lock to ensure mutual exclusion</p>
+<pre><code class="language-c">Monitor Account {
+	int balance;
+	pthread_mutex_t lock;
+	void withdraw(int amount) {balance -= amount};
+	void deposit(int amount) {balance += amount};
+}
+</code></pre>
+<h2><a class="header" href="#monitor-readerwriters-problem" id="monitor-readerwriters-problem">Monitor Reader/Writers Problem</a></h2>
+<pre><code class="language-c">typedef struct file_s {
+	int readcount;
+	pthread_cond_t read;
+	pthread_cond_t write;
+	pthread_mutex_t lock;
+} file_t;
+
+/* Initialize values */
+file_t file;
+
+void read_file() {
+	file.readcount++;
+	pthread_mutex_lock(file.lock);
+	read;
+	file.readcount--;
+	pthread_mutex_release(file.lock);
+
+	if (file.readcount == 0) {
+		pthread_cond_signal(file.write);
+	}
+	else {
+		pthread_cond_signal(file.read);
+	}
+}
+
+void write_to_file() {
+	pthread_mutex_lock(file.lock);
+	while(readcount &gt; 0) {
+		pthread_wait_cond(file.write, file.lock);
+	}
+	write;
+	pthread_mutex_release(file.lock);
+	pthread_cond_signal(file.write);
+	pthread_cond_signal(file.read);
+}
+</code></pre>
+<h2><a class="header" href="#monitor-bounded-buffer-example" id="monitor-bounded-buffer-example">Monitor Bounded Buffer Example</a></h2>
+<p>We want to use a monitor to control access to a size N buffer. As well as a lock,
+we need two conditions:</p>
+<ul>
+<li>Producers need the buffer to be not full</li>
+<li>Consumers need the buffer to be not empty</li>
+</ul>
+<pre><code class="language-c">#define N 100
+typedef struct buf_s {
+	int data[N];
+	int inpos;
+	int outpos;
+	int numelements;
+	pthread_cond_t notFull;
+	pthread_cond_t notEmpty;
+	pthread_mutex_t lock;
+} buf_t;
+
+/* Initialize values */
+buf_t buf;
+
+void add_to_buff(int value) {
+	pthread_mutex_lock(buf.lock);
+
+	while (buf.numelements == N) {
+		// buffer is full, wait
+		pthread_cond_wait(buf.notFull, buf.mylock);
+	}
+	buf.data[buf.inpos] = value;
+	buf.inpos = (buf.inpos + 1) % N;
+	buf.numelements++;
+
+	pthread_cond_signal(buf.notEmpty);
+	
+	pthread_mutex_release(buf.lock);
+}
+
+int remove_from_buff() {
+	int val;
+	pthread_mutex_lock(buf.lock);
+	
+	while (buf.numelements == 0) {
+		// buffer is empty, wait
+		pthread_cond_wait(buf.notEmpty, buf.lock);
+	}
+	val = buf.data[buf.outpos];
+	buf.outpos = (buf.outpos + 1) % N;
+	buf.numelements--;
+
+	pthread_cond_signal(buf.notFull);
+
+	pthread_mutex_release(buf.lock);
+	return val;
+}
+</code></pre>
+<p>Note that when a process waits on a condition and is signalled, it is only a hint
+that the condition is true but not a guarantee once it enters the monitor.
+Another process could change the value while the process is queuing up. That's
+why the while loop is needed, so the buffer goes back to the waiting queue if the
+condition is not satisfied.</p>
+<h1><a class="header" href="#process-scheduling" id="process-scheduling">Process Scheduling</a></h1>
+<p>On a CPU, only one process can run at a time. We will need a scheduler that
+decides which processes to run. We want a CPU scheduling algorithm that
+achieves:</p>
+<ul>
+<li><strong>Context switching</strong> - Gives illusion of concurrency (single core)</li>
+<li><strong>Fairness</strong> - Each process receives fair share of CPU</li>
+<li><strong>Avoid starvation</strong> - Process should get CPU in definite time </li>
+<li><strong>Policy enforcement</strong> - Usage policies should be met</li>
+<li><strong>Balance</strong> - All parts of the system should be busy</li>
+<li><strong>CPU utilization</strong> - Keep the CPU busy all the time</li>
+</ul>
+<p>Preemptive scheduling is suitable for real-time systems. The CPU can be taken
+from a running process and allocated to another</p>
+<p>On batch systems, we batch processes together and run them in batches. On these
+systems, we want:</p>
+<ul>
+<li><strong>Throughput</strong> - Maximize jobs completed per hour</li>
+<li><strong>Turnaround time</strong> - Minimize time between submission and completion</li>
+<li><strong>CPU utilization</strong> - Keep the CPU busy all the time</li>
+</ul>
+<p>Non-preemptive scheduling is suitable for batch systems. Once the CPU is
+allocated a process, it keeps the CPU until it terminates.</p>
+<h2><a class="header" href="#process-states" id="process-states">Process States</a></h2>
+<p>OS manages processes by keeping track of their state.</p>
+<p>During execution, a process in the running state:</p>
+<ul>
+<li>May be waiting for an I/O device or some condition.<br />
+They would then enter the blocked state.</li>
+<li>May time out.<br />
+OS takes back CPU and takes the next process in the ready queue</li>
+</ul>
+<p>A process in the blocked state:</p>
+<ul>
+<li>May become ready to execute (I/O task is complete)<br />
+Process enters the ready queue</li>
+</ul>
+<p>A process in the ready state:</p>
+<ul>
+<li>May be selected by the scheduler
+CPU takes the process, restores its state and starts to execute it</li>
+</ul>
+<p><img src="cscc69/./pictures/process-cycle.png" alt="process-cycle" /></p>
+<h2><a class="header" href="#dispatchcontext-switch" id="dispatchcontext-switch">Dispatch/Context Switch</a></h2>
+<p>During a context switch, CPU switches to another process.</p>
+<ol>
+<li>Save currently running process state (unless process is exiting)</li>
+<li>Select next process from ready queue</li>
+<li>Restore state of next process
+<ul>
+<li>registers</li>
+<li>switch to user mode</li>
+<li>set PC to next instruction in the process</li>
+</ul>
+</li>
+</ol>
+<h2><a class="header" href="#cpu-and-io-bursts" id="cpu-and-io-bursts">CPU and I/O Bursts</a></h2>
+<p>During I/O, the CPU is not needed. This is an opportunity for the CPU to execute
+a process that does.</p>
+<p>Processes alternate between CPU bursts and I/O bursts.</p>
+<ul>
+<li>Last CPU burst ends with a call to terminate the process</li>
+<li>CPU-bound - very long CPU bursts, infrequent I/O bursts</li>
+<li>I/O bound - short CPU bursts, frequent (long) I/O bursts</li>
+</ul>
+<p><img src="cscc69/./pictures/bursts.png" alt="bursts" /> </p>
+<h1><a class="header" href="#non-preemptive-scheduling" id="non-preemptive-scheduling">Non-preemptive Scheduling</a></h1>
+<p>In non-preemptive scheduling, once th CPU is allocated a process, it keeps the
+CPU until it terminates. This type of scheduling is suitable for batch
+scheduling.</p>
+<h2><a class="header" href="#first-come-first-serve" id="first-come-first-serve">First Come First Serve</a></h2>
+<p>Scheduler chooses the process at the head of the queue of ready processes.</p>
+<p>Average waiting times are often quite long</p>
+<p>Causes a <strong>convoy effect</strong>: all processes need to wait for a big process to
+release the CPU.</p>
+<p><img src="cscc69/./pictures/fcfs.png" alt="fcfs" /></p>
+<p>In this example:</p>
+<ul>
+<li>B waits 2 cycles</li>
+<li>C waits 6 cycles</li>
+<li>In total, 8 cycles of waiting</li>
+<li>On average, 2.66 cycles</li>
+</ul>
+<h2><a class="header" href="#shortest-job-first" id="shortest-job-first">Shortest Job First</a></h2>
+<p>Instead of choosing the first process in the queue, scheduler chooses the
+shortest job first.</p>
+<p>Reduces the waiting times dramatically, compared to FCFS.</p>
+<p>However, we need to know processing times in advance, which can be difficult.
+Long processes can be starved, if there are always new shorter jobs joining
+the queue.</p>
+<p><img src="cscc69/./pictures/sjf.png" alt="sjf" /></p>
+<p>In this example:</p>
+<ul>
+<li>B waits 3 cycles</li>
+<li>C waits 1 cycle</li>
+<li>In total, 4 cycles of waiting</li>
+<li>On average, 1.33 cycles</li>
+</ul>
+<h1><a class="header" href="#preemptive-scheduling" id="preemptive-scheduling">Preemptive Scheduling</a></h1>
+<p>As we saw, both of the non-preemptive scheduling algorithms had drawbacks.
+Preemptive algorithms dont always run long processes until completion, but allow
+other processes to take the CPU before it finishes.</p>
+<h2><a class="header" href="#round-robin" id="round-robin">Round Robin</a></h2>
+<p>In round-robin, we cycle through a circular ready queue.</p>
+<p>Each process is allowed to run for time quantum <em>q</em>. If it takes longer, it is
+preempted and put back on queue.</p>
+<ul>
+<li>\(q \rightarrow \infty\), RR \(\rightarrow \) FCFS</li>
+<li>\(q \rightarrow 0\), RR \(\rightarrow \) processor sharing (PS)</li>
+</ul>
+<p>We want <em>q</em> to be large with respect to the context switch time</p>
+<h2><a class="header" href="#priority-scheduling" id="priority-scheduling">Priority Scheduling</a></h2>
+<p>Associate a priority <em>p</em> with each process. Highest priority job is selected from
+ready queue.</p>
+<p>Enforcing this policy is tricky:</p>
+<ul>
+<li>Low priority task may never get to run (starvation)</li>
+<li>Low priority task may prevent high priority task from making progress by
+holding a resource (priority inversion)</li>
+</ul>
+<p><img src="cscc69/./pictures/pathfinder-bug.png" alt="pathfinder-bug" /></p>
+<p>In this Mars Rover Pathfinder bug, there is a shared &quot;information bus&quot; resource.</p>
+<ol>
+<li>Low priority &quot;data gathering&quot; is executing and acquires the lock to the bus</li>
+<li>High priority &quot;bus management&quot; takes the CPU from the low priority task</li>
+<li>Task is blocked from information bus by data gathering process</li>
+</ol>
+<h2><a class="header" href="#multi-level-queue-scheduling" id="multi-level-queue-scheduling">Multi-Level Queue Scheduling</a></h2>
+<p>Multiple queues and two scheduling policies:</p>
+<ul>
+<li>First decides which queue to serve (queue priorities)</li>
+<li>Second decides which job within queue to choose (FCFS or RR)</li>
+</ul>
+<p>Highest priority queue gets 1 quantum, second gets 2,..., etc.</p>
+<p>If highest doesn't finish during quantum, bump down to second highest queue.</p>
+<p>Shortest (high priority) jobs get out first</p>
+<p><img src="cscc69/./pictures/multi-level-queue.png" alt="multi-level-queue" /></p>
+<h2><a class="header" href="#feedback-scheduling" id="feedback-scheduling">Feedback Scheduling</a></h2>
+<p>When scheduling, we want to achieve:</p>
+<ul>
+<li>priority to shorter jobs</li>
+<li>priority to IO bound jobs</li>
+<li>priority to interactive jobs</li>
+</ul>
+<p>However, we don't know beforehand what type of jobs we receive. So, we can adjust
+our criteria based on past history. Using feedback scheduling, combined with MLQ,
+we can:</p>
+<ul>
+<li>prefer processes that do not use full quantum</li>
+<li>change priority of processes based on age</li>
+<li>change priority of processes based on CPU consumed so far</li>
+<li>boost priority following a user-input event</li>
+<li>move processes between queues</li>
+</ul>
+<h2><a class="header" href="#linux-26-cpu-scheduling" id="linux-26-cpu-scheduling">Linux 2.6 CPU Scheduling</a></h2>
+<p>Linux uses a combination of multilevel queues (with priorites and RR) and
+feedback scheduling.</p>
+<p>Distinguishes between 3 classes:</p>
+<ul>
+<li>realtime FIFO processes</li>
+<li>realtime RR processes</li>
+<li>timesharing processes (we will focus on these)</li>
+</ul>
+<p>The CPU always runs the task in active array with highest priority for a certain
+<strong>timeslice</strong>. Processes with the same priority do RR between them.</p>
+<p><img src="cscc69/./pictures/linux-active-sched.png" alt="linux-active-sched" /></p>
+<p>After <strong>granularity</strong> time units, array is expired. Next array becomes active.</p>
+<p><img src="cscc69/./pictures/linux-expired-sched.png" alt="linux-expired-sched" /></p>
+<p>Priorities can be assigned to a static priority <em>nice</em> through the <strong>nice(inc)</strong>
+system call. The calling thread adds <strong>inc</strong> to their nice value within the range
+[-20,19].</p>
+<p>On top of static <strong>nice</strong> priority, linux adds a bonus/penalty on top of it.
+Interactive and IO bound processes are favoured. They can be identified by
+looking at their <strong>sleep_avg</strong>. A high sleep_avg indicates an Interactive/IO
+process.</p>
+<pre><code class="language-c">priority = static_priority + bonus
+</code></pre>
+<p>Timeslice depends on the static <em>nice</em> priority, usually between 5ms and 800ms.</p>
+<p>Granularity depends on the dynamic priority</p>
+<h1><a class="header" href="#cscc63-computability-and-complexity" id="cscc63-computability-and-complexity">CSCC63 Computability and Complexity</a></h1>
+<p>University of Toronto Scarborough<br />
+Computability and Complexity<br />
+Winter 2020</p>
+<p><strong>Professor</strong>: Eric Corlett<br />
+<strong>Email</strong>: eric.corlett@utoronto.ca<br />
+<strong>Office Hours</strong>: Friday 11am-1pm IC400A</p>
+<h2><a class="header" href="#textbooks" id="textbooks">Textbooks</a></h2>
+<ul>
+<li>Introduction to the Theory of Computation, 3rd edition - Sipser</li>
+<li>Introduction to Automata Theory, Languages and Computation - Hopcraft and
+Ullman</li>
+<li>Other notes provided on Quercus</li>
+</ul>
+<h2><a class="header" href="#what-is-this-course-about" id="what-is-this-course-about">What is this course about?</a></h2>
+<p>This course is here to get you started in thinking about the <em>limits of
+computation</em>: what sort of problems can we reasonably compute using
+algorithms, and what problems we will never be able to fully answer?
+And if we can compute the answer to a problem, how efficiently can we
+do so?</p>
+<p>Of course, we're designing more powerful computers all the time. So a
+statement about the limitations of your laptop today may not apply in a
+few years. In order to give limits that won't change, we have to talk about
+the limitations of logic itself.</p>
+<h2><a class="header" href="#workload-1" id="workload-1">Workload</a></h2>
+<ol>
+<li>Assignments (3) - 15% each, 45% total</li>
+<li>Midterm - 20%
+<ul>
+<li>No aid allowed</li>
+</ul>
+</li>
+<li>Final Exam - 35%
+<ul>
+<li>Must get at least 35% to pass the course</li>
+<li>No aid allowed</li>
+</ul>
+</li>
+</ol>
+<h1><a class="header" href="#introductions-and-definitions" id="introductions-and-definitions">Introductions and Definitions</a></h1>
+<h2><a class="header" href="#definitions" id="definitions">Definitions</a></h2>
+<p>We'll divide our questions about logic between two main topics:</p>
+<ul>
+<li><strong>Computability</strong> - What question can logic ever solve?</li>
+<li><strong>Complexity</strong> - What questions can logic solve efficiently?</li>
+</ul>
+<p>We will use <em>decision problems</em> to talk about problems we are likely to have to
+solve. A problem whose answer is either YES or NO.</p>
+<ul>
+<li>Given integers x and y, what is \( x^2+y^2 \)? (NOT DECISION PROBLEM)</li>
+<li>Given integers x,y,z, is \( z = x^2+y^3 \)? (DECISION PROBLEM)</li>
+<li>Given integers x and z, is there an integer y such that \( z = x^2+y^3 \)?
+(DECISION PROBLEM)</li>
+</ul>
+<p>When dealing with a problem, we talk about the problem's inpus. However, we
+think of inputs as inputs to a program, and we want to differentiate from it.
+We will refer to &quot;input&quot; for a problem as an <strong>instance.</strong> So, an input to a
+decision problem would be a <strong>yes instance</strong> or <strong>no instance</strong>.</p>
+<p>We will talk about objects that can reasonably be encoded into a computer. i.e.
+graphs, tables, not real numbers.</p>
+<p><strong>Algorithm</strong>: Logical sequence of steps for a problem instance, that will
+terminate in a finite amount of time and give a solution to that instance.</p>
+<h2><a class="header" href="#turing-machines" id="turing-machines">Turing Machines</a></h2>
+<p>From previous classes, we learned about DFSAs, which can accept lots of things,
+but lack of memory meant it could not recognize anything that requires counting.</p>
+<p>\(L=\{0^n1^n | n \in N\}\)</p>
+<p>We also described PDA, that can recognize this using a stack for memory. Since
+it is a stack, data has to be accessed in order, so it can't interleave patterns.
+Also limited in calculations to size of the input string. </p>
+<p>\(L=\{w\#w | w \in \{0,1\}^*\}\)</p>
+<p>A Turing Machine allows arbitrarily large computing times, and access to
+unrestricted memory by doing the following:</p>
+<ul>
+<li>The head of the tape moves either left or right when reading a character.
+determined by the arrow in the machine</li>
+<li>Have unlimited blank characters to the right of the input string</li>
+<li>Can write onto the tape, determined by the arrow in the machine</li>
+</ul>
+<p><img src="cscc63/./pictures/tm-example.png" alt="turing machine" /></p>
+<p>Let's feed 010#011 to the machine:</p>
+<p>Starting with the initial configuration:<br />
+\(q_0 010\#011\)</p>
+<p>Read 0, move to state 2, write x, move right:<br />
+\(x q_2 10\#011\)</p>
+<p>Read 1, move right:<br />
+\(x1 q_2 0\#011\)<br />
+\(x10 q_2 \#011\)<br />
+\(x10\# q_4 011\)</p>
+<p>Read 0, move to state 6, write x, move left:<br />
+\(x10 q_6 \#x11\)</p>
+<p>And so on...<br />
+\(x1 q_7 0\#x11\)<br />
+\(x q_7 10\#x11\)<br />
+\(q_7 x10\#x11\)<br />
+\(x q_1 10\#x11\)<br />
+\(xx q_3 0\#x11\)<br />
+\(xx0 q_3 \#x11\)<br />
+\(xx0\# q_5 x11\)<br />
+\(xx0\#x q_5 11\)<br />
+\(xx0\# q_6 xx1\)<br />
+\(xx0 q_6 \#xx1\)<br />
+\(xx q_7 0\#xx1\)<br />
+\(x q_7 x0\#xx1\)<br />
+\(xx q_1 0\#xx1\)<br />
+\(xxx q_2 \#xx1\)<br />
+\(xxx\# q_4 xx1\)<br />
+\(xxx\#x q_4 x1\)</p>
+<p>Here there is no path to follow, so we reject<br />
+\(xxx\#xx q_4 1\)</p>
+<p>As we move through the TM, we move from one <strong>configuration</strong> to another</p>
+<p>Formally, a TM is defined as \(M=(Q, \Sigma, \Gamma, \delta, s, q_A, q_R) \)</p>
+<ul>
+<li>\(Q\) is a set of states</li>
+<li>\(\Sigma\) is the input alphabet</li>
+<li>\(\Gamma\) is the tape alphabet, a superset of the input alphabet including</li>
+<li>\(\delta\) transition function
+\(\delta:Q \times \Gamma \rightarrow Q \times \Gamma \times \{L,R\}\)</li>
+<li>\(s\) the start state</li>
+<li>\(q_A\) accepting state. If we enter it, we accept and halt</li>
+<li>\(q_R\) rejecting state. If we enter it, we accept and reject. Often just
+implicitly used when no available out arrow to follow.</li>
+</ul>
+<p>Additional notes:</p>
+<ul>
+<li>If we're on the left side of the tape and move left, we stay in place</li>
+<li>If we move past the input string, we have empty blank characters</li>
+<li>Blank characters are part of the tape alphabet, not input</li>
+</ul>
+<h1><a class="header" href="#l12nn-in-n" id="l12nn-in-n">\(L=\{1^{2^n}|n \in N\}\)</a></h1>
+<ol>
+<li>Replace first 1 with $ to indicate start</li>
+<li>Go right, replace odd 1s with x<br />
+If we encounter even 1s in a pass, reject</li>
+<li>Move back to after $, if we reach end of string</li>
+<li>Accept if we dont encounter any 1s in a pass</li>
+</ol>
+<pre><code>- q1 qA qR
+q1 1 q2 $ R
+q2 x q2 . R
+q2 1 q3 x R
+q2 - qA . R
+q3 x q3 . R
+q3 1 q4 . R
+q3 - q5 . L
+q4 x q4 . R
+q4 1 q3 x R
+q5 x q5 . L
+q5 x q5 . L
+q5 1 q5 . L
+q5 $ q2 . R
+</code></pre>
+<p><a href="https://mustafaquraish.github.io/TMSim/">Turing Machine Simulator</a></p>
+<h1><a class="header" href="#proof-methods" id="proof-methods">Proof Methods</a></h1>
+<h2><a class="header" href="#diagonalization-method" id="diagonalization-method">Diagonalization Method</a></h2>
+<p>Assume we have two sets A, B, and a function mapping A to B.</p>
+<p>f is <strong>one-to-one</strong>(injective) if f no two elements in A map to the same element in B.</p>
+<p>f is <strong>onto</strong>(surjective) if every element in B is mapped to by at least one element in A.</p>
+<p>f is a <strong>correspondence</strong>(bijective) if f is both one-to-one and onto</p>
+<h1><a class="header" href="#turing-machines-1" id="turing-machines-1">Turing Machines</a></h1>
+<h2><a class="header" href="#multi-tape-turing-machines" id="multi-tape-turing-machines">Multi-tape Turing Machines</a></h2>
+<p>Modify the single tape turing machine by adding another tape. This is the same as
+a single TM, but we can work with multiple strings</p>
+<p><img src="cscc63/./pictures/multi-tape-tm.png" alt="Multi-tape TM" /></p>
+<p>Say we have the following three strings:</p>
+<p>\(01q_1011\)<br />
+\(000q_1\)<br />
+\(q_11010\)</p>
+<p>These can be flattened into one TM:</p>
+<p>\(
+01q_1011\#
+000q_1\#
+q_11010
+\)</p>
+<p>If we shift the string down by one to denote the left-hand-side of the string,
+we can make a TM that moves back and forth between the different strings.</p>
+<p>\(
+$01q_1011\#
+000q_1\#
+q_11010
+\)</p>
+<p>Add to \(\Gamma, \dot{\Sigma}\) all symbols of the input alphabet with
+\(\dot{}\) above it, \(\#\), and \(\dot{\#}\)</p>
+<p>S = &quot;On input \(w = w_1, w_2,...,w_n\)</p>
+<ol>
+<li>\(\#\dot{w_1}w_2...w_n\#\dot{-}\#\dot{-}\#...\#\)</li>
+<li>Move right, read symbols under each tape head</li>
+<li>Second pass, move left, update tapes according to M's transition function</li>
+<li>If TM encounters \(\dot{\#}\), then it reached an unread blank portion
+of the tape. It writes a blank, and shifts all the content right of
+\(\dot{\#}\) to the right</li>
+</ol>
+<p>So, we can emulate multiple tapes with a single-tape TM. However, we have a time
+cost. If our string has max length n, moving back and forth along the tape to
+update positions take up to n times as many steps.</p>
+<h2><a class="header" href="#non-deterministic-turing-machines" id="non-deterministic-turing-machines">Non-Deterministic Turing Machines</a></h2>
+<p>We can also have non-deterministic turing machines, where there are multiple
+possible arrows out of a state. We accept if <em>any</em> choice leads to the accepting
+state. </p>
+<p><img src="cscc63/./pictures/non-deterministic-tm.png" alt="Non-Deterministic TM" /></p>
+<p>\(
+q_0 $01x \rightarrow $q_101x \rightarrow $xq_21x \rightarrow $xyq_3x
+\)</p>
+<p>From here, we have two choices to follow:<br />
+\($xyxq_1 \rightarrow \) reject<br />
+\($xyxq_2 \rightarrow \) accept</p>
+<p>We can simulate a non-deterministic TM by performing a breadth-first search on
+the configuration tree using multi-tape TMs</p>
+<p><img src="cscc63/./pictures/ndtm-sim.png" alt="Non-Deterministic Sim" /></p>
+<p><strong>input tape</strong> contains the unaltered input<br />
+<strong>simulation tape</strong> simulates some branch of the NTM<br />
+<strong>address tape</strong> tells us what branch we're on</p>
+<p>Start at the root, follow the first child, second child, third child,...</p>
+<ol>
+<li>Initially, tape 2, 3 empty, 1 contains input \(w\)</li>
+<li>Copy 1 to 2, initialize string on 3 to be \(\epsilon\)</li>
+<li>Simulate n on 2, consult 3 for next branch to follow<br />
+If branch invalid, go to 4 (also if reject)<br />
+Elseif no tape 3 symbol, go to 4</li>
+<li>Replace tape 3 string with next string in ordering<br />
+Simulate next branch by going to 2</li>
+</ol>
+<p>So, we can simulate a NDTM with a TM. Similarly, there is a time cost. The
+size of the tree can be exponentially large in height, so doing a BFS on a
+configuration tree of an NTM can take exponentially longer than the running
+time of the NTM.</p>
+<h2><a class="header" href="#ram-model" id="ram-model">RAM model</a></h2>
+<p>In the RAM model, each tape cell has an address, we can jump to any address
+during computation, and can read memory addresses from the tape to figure out
+where to jump. Gives us a regular computer's architecture!</p>
+<p>There is a \(n^6\) slowdown however, where n is the length of the string</p>
+<h2><a class="header" href="#church-turing-thesis" id="church-turing-thesis">Church-Turing Thesis</a></h2>
+<p>As we can see, each of the modified turing machines can be simulated with a
+single tape TM. So, they all have the same expressive power.</p>
+<p>Anything that we can reasonably expect to do with an algorithm can also be
+decided using a TM:</p>
+<blockquote>
+<p>Problems that can be solved using algorithms \(\leftrightarrow\) Problems
+that can be solved using TMs</p>
+</blockquote>
+<p>We can now look at things that TMs can't do, and by this thesis, if a TM can't
+do it, then no algorithm can.</p>
+<h2><a class="header" href="#the-liars-paradox" id="the-liars-paradox">The Liar's Paradox</a></h2>
+<p>A statement of the form <strong>&quot;This statement is false.&quot;</strong></p>
+<p>If we can encode this paradox into a program under assumption that a problem
+is decidable, we can show that there is some flaw in our code, and therefore a
+flaw in our assumption.</p>
+<h2><a class="header" href="#decidability" id="decidability">Decidability</a></h2>
+<p><strong>Decidable</strong>: A problem that can be solve by a TM or algorithm is decidable.</p>
+<p><strong>Recognizable</strong>: A problem is recognizable if we can build a TM that will
+accept exactly the set of its yes-instances, and loop on some of its
+no-instances.</p>
+<p><strong>Co-recognizable</strong>: A problem is co-recognizable if we can recognize all of
+the no-instances, and loop on some of its yes-instances. We can prove
+co-recognizability by writing a recognizer for the complement of the language a
+problem accepts.</p>
+<h1><a class="header" href="#a_tm---langle-mw-rangle--textm-accepts-w-" id="a_tm---langle-mw-rangle--textm-accepts-w-">\(A_{TM} = \{ \langle M,w \rangle | \text{M accepts w} \}\)</a></h1>
+<p>This turing machine accepts the language of accepting turing machines.</p>
+<h2><a class="header" href="#recognizability" id="recognizability">Recognizability</a></h2>
+<p>Trivially, we can see that this language is recognizable. We can build the
+following TM to recognize this language:</p>
+<p>\(A\) = &quot;On input \(\langle M,w \rangle \)&quot;</p>
+<ol>
+<li>Run \(M\) on \(w\)</li>
+<li>If M accepts, accept</li>
+<li>If M rejects, reject</li>
+</ol>
+<p>However, this machine loops on input M,w if M loops on w.</p>
+<h2><a class="header" href="#undecidability" id="undecidability">Undecidability</a></h2>
+<p>We will do a proof by contradiction. Assume that \(A_{TM}\) can be solved by
+some TM \(M_A\)</p>
+<p>Use this to build another TM \(D\). \(D\) takes input of the form
+\(\langle M \rangle \), where \(M\) is some TM.</p>
+<p>\(D\) = On input \(\langle M \rangle\):</p>
+<ol>
+<li>Run \(M_A\) on the input \(\langle M,\langle M \rangle\rangle\).</li>
+<li>If \(M_A\) accepts, reject</li>
+<li>Else, accept</li>
+</ol>
+<p>What we get is a machine that does the following:</p>
+<p>\[
+D(\langle M \rangle) =
+\begin{cases}
+\text{if M accepts }\langle M \rangle \text{, reject}\\
+\text{if M rejects }\langle M \rangle \text{, accept}
+\end{cases}
+\]</p>
+<p>Now, we run D on the input \(\langle D \rangle\).</p>
+<p>\[
+D(\langle D \rangle) =
+\begin{cases}
+\text{if D accepts }\langle D \rangle \text{, reject}\\
+\text{if D rejects }\langle D \rangle \text{, accept}
+\end{cases}
+\]</p>
+<p>We have encoded the liar's paradox into this machine. Therefore, our original
+assumption that \(M_A\) was decidable is incorrect, and \(A_{TM}\) is
+undecidable.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
