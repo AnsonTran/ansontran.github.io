@@ -98,8 +98,28 @@ single tape TM. So, they all have the same expressive power.
 Anything that we can reasonably expect to do with an algorithm can also be
 decided using a TM:
 
-**Problems that can be solved using algorithms
-\\(\leftrightarrow\\)
-Problems that can be solved using TMs**
+> Problems that can be solved using algorithms \\(\leftrightarrow\\) Problems
+> that can be solved using TMs
 
+We can now look at things that TMs can't do, and by this thesis, if a TM can't
+do it, then no algorithm can.
+
+## The Liar's Paradox
+A statement of the form **"This statement is false."**
+
+If we can encode this paradox into a program under assumption that a problem
+is decidable, we can show that there is some flaw in our code, and therefore a
+flaw in our assumption.
+
+## Decidability
+**Decidable**: A problem that can be solve by a TM or algorithm is decidable.
+
+**Recognizable**: A problem is recognizable if we can build a TM that will
+accept exactly the set of its yes-instances, and loop on some of its
+no-instances.
+
+**Co-recognizable**: A problem is co-recognizable if we can recognize all of
+the no-instances, and loop on some of its yes-instances. We can prove
+co-recognizability by writing a recognizer for the complement of the language a
+problem accepts.
 

@@ -1,9 +1,0 @@
-[book]
-authors = ["AnsonTran"]
-language = "en"
-multilingual = false
-src = "src"
-title = "Notes"
-
-[output.html]
-mathjax-support = true
