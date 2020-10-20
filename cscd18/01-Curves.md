@@ -89,3 +89,26 @@ e(t)=c(t)+d(t)
 \]
 
 ![parametric-cloud](./images/parametric-cloud.png)
+
+# Tangents and Normals
+The tangent to a curve at a point is the instantaneous direction of the curve.
+It intersects the curve at a single point. It is given by the derivative of the
+parametric form, with respect to $\lambda$
+
+\[
+t(\lambda) =
+\frac{dp(\lambda)}{d\lambda} =
+(\frac{dx(\lambda)}{d\lambda}, \frac{dy(\lambda)}{d\lambda}
+\]
+
+The normal is a vector perpendicular to the tangent. For a closed curve, the
+normal can point either away from the surface, or towards the center, in which
+case it would be an inward/outward facing normal. 
+
+From the implicit form, the normal at a point is the gradient:
+
+\[
+n(p) =
+\nabla f(p) =
+(\frac{df(x,y)}{dx}, \frac{df(x,y)}{dy}
+\]
